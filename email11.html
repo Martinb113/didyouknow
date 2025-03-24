@@ -14,20 +14,17 @@
         <o:AllowPNG/>
         <o:PixelsPerInch>96</o:PixelsPerInch>
         <o:EnableSmartArt/>
-        <o:AllowPNG/>
-        <o:PixelsPerInch>96</o:PixelsPerInch>
       </o:OfficeDocumentSettings>
     </xml>
     <style type="text/css">
-        table {border-collapse: collapse;}
+        table {border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
         td,th {mso-line-height-rule: exactly;}
         body,table,td,p,a {font-family: Arial, Helvetica, sans-serif !important;}
         .ExternalClass * {line-height: 100%}
         .rounded-corners {
             mso-border-alt: none;
         }
-        img {display: block;}
-        .mso-img {display: block;}
+        img {-ms-interpolation-mode: bicubic !important; display: block !important;}
     </style>
     <![endif]-->
 
@@ -51,17 +48,44 @@
             body {background-color: #1e1e1e;}
             .dark-mode-text {color: #e6e6e6;}
         }
-
-        /* Outlook-specific spacing */
-        .mso-spacing {mso-line-height-rule: exactly;}
-        .mso-padding {padding: 20px !important;}
         
-        /* View in browser notice */
-        .view-in-browser {
-            font-size: 12px;
-            color: #999999;
-            text-align: center;
-            padding: 5px 0;
+        /* Outlook spacing fixes */
+        .outlook-table-fix {
+            mso-table-lspace: 0pt; 
+            mso-table-rspace: 0pt;
+        }
+        
+        /* Fix for Outlook image distortion */
+        .outlook-image-fix {
+            width: 80px !important;
+            height: 80px !important;
+            -ms-interpolation-mode: bicubic !important;
+        }
+        
+        /* Clickable element styling */
+        .clickable-element {
+            border-left: 3px solid #0057b8;
+            transition: background-color 0.3s ease;
+            position: relative;
+        }
+        
+        .clickable-element:hover {
+            background-color: #3a3a3a;
+        }
+        
+        /* Interactive indicator for clickable elements */
+        .interactive-indicator {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: rgba(0, 87, 184, 0.7);
+            color: white;
+            border-radius: 3px;
+            padding: 2px 6px;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
     </style>
 </head>
@@ -74,25 +98,16 @@
     <![endif]-->
 
     <!-- Wrapper -->
-    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; background-color: #1e1e1e; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="table-layout: fixed; background-color: #1e1e1e; border-collapse: collapse;">
         <tr>
             <td align="center" style="padding: 40px 0;">
                 <!-- Email Container -->
                 <!--[if mso]>
-                <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; background-color: #2a2a2a; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; background-color: #2a2a2a;">
                 <![endif]-->
                 <!--[if !mso]><!-->
-                <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-table shadow" style="border-collapse: collapse; background-color: #2a2a2a; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-table shadow" style="border-collapse: collapse; background-color: #2a2a2a;">
                 <!--<![endif]-->
-                    <!-- View in browser notice -->
-                    <tr>
-                        <td align="center" style="padding: 10px 20px; background-color: #222222;">
-                            <p style="margin: 0; font-size: 12px; color: #999999; font-family: Arial, Helvetica, sans-serif;">
-                                For best viewing experience: Right-click anywhere in this email → Select "Save As" → Save the HTML file → Open in your web browser
-                            </p>
-                        </td>
-                    </tr>
-                    
                     <!-- Header with VML background for Outlook -->
                     <tr>
                         <td align="center" bgcolor="#0057b8" style="padding: 40px 30px; text-align: center;">
@@ -102,53 +117,43 @@
                             <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
                             <![endif]-->
                             
-                            <!-- AT&T Logo with explicit dimensions and fallback for Outlook -->
+                            <!-- AT&T Logo - Fixed for Outlook with proper table structure -->
                             <!--[if mso]>
-                            <table border="0" cellpadding="0" cellspacing="0" align="center" width="80" style="margin-bottom: 25px;">
+                            <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
                                 <tr>
-                                    <td align="center" style="padding: 0;">
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
-                                             alt="AT&T Logo" 
-                                             width="80" 
-                                             height="80" 
-                                             style="display: block; border: 0; -ms-interpolation-mode: bicubic; width: 80px; height: 80px;" />
+                                    <td align="center" style="padding-bottom: 25px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center">
+                                            <tr>
+                                                <td style="width: 80px; height: 80px;">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
+                                                         alt="AT&T Logo" 
+                                                         width="80" 
+                                                         height="80" 
+                                                         style="width: 80px; height: 80px; display: block; border: 0; -ms-interpolation-mode: bicubic;" />
+                                                </td>
+                                            </tr>
+                                        </table>
                                     </td>
                                 </tr>
                             </table>
-                            <div style="display:none">
                             <![endif]-->
+                            
                             <!-- Fallback for non-Outlook clients -->
+                            <!--[if !mso]><!-->
                             <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
                                  alt="AT&T Logo" 
                                  width="80" 
                                  height="80" 
                                  style="display: block; margin: 0 auto 25px auto; border: 0; width: 80px; height: 80px;" />
-                            <!--[if mso]>
-                            </div>
-                            <![endif]-->
+                            <!--<![endif]-->
 
                             <!-- Text fallback for when images are blocked -->
                             <div style="display: none; max-height: 0; overflow: hidden;">
                                 AT&T Logo
                             </div>
 
-                            <!-- Title with proper spacing for Outlook -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 12px;">
-                                <tr>
-                                    <td align="center">
-                                        <h1 style="color: white; margin: 0; font-size: 32px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; line-height: 36px; letter-spacing: -0.5px;">Transform Your Work with Ask AT&amp;T</h1>
-                                    </td>
-                                </tr>
-                            </table>
-
-                            <!-- Subtitle with proper spacing for Outlook -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                <tr>
-                                    <td align="center">
-                                        <p style="color: white; margin: 0; font-size: 18px; font-weight: normal; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">Your AI Superpower</p>
-                                    </td>
-                                </tr>
-                            </table>
+                            <h1 style="color: white; margin: 0; font-size: 32px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; line-height: 36px; letter-spacing: -0.5px;">Transform Your Work with Ask AT&amp;T</h1>
+                            <p style="color: white; margin: 12px 0 0 0; font-size: 18px; font-weight: normal; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">Your AI Superpower</p>
                             
                             <!--[if gte mso 9]>
                             </v:textbox>
@@ -157,51 +162,60 @@
                         </td>
                     </tr>
                     
-                    <!-- Main Content with improved spacing -->
+                    <!-- Main Content -->
                     <tr>
                         <td style="padding: 45px 50px 30px 50px; font-family: Arial, Helvetica, sans-serif; color: #e6e6e6;">
-                            <!-- Introduction with proper spacing -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 30px;">
-                                <tr>
-                                    <td>
-                                        <p style="font-size: 16px; color: #e6e6e6; margin: 0 0 15px 0; line-height: 1.7; font-family: Arial, Helvetica, sans-serif;">Hi there,</p>
-                                        <p style="font-size: 18px; color: #e6e6e6; margin: 0; line-height: 1.7; font-family: Arial, Helvetica, sans-serif;">&#128640; <strong>Meet Ask AT&amp;T</strong> – your AI-powered assistant that doesn't just search for answers… it <strong>creates them!</strong></p>
-                                    </td>
-                                </tr>
-                            </table>
+                            <!-- Introduction -->
+                            <p style="font-size: 16px; color: #e6e6e6; margin-top: 0; margin-bottom: 15px; line-height: 1.7; font-family: Arial, Helvetica, sans-serif;">Hi there,</p>
+                            <p style="font-size: 18px; color: #e6e6e6; margin-bottom: 30px; line-height: 1.7; font-family: Arial, Helvetica, sans-serif;">&#128640; <strong>Meet Ask AT&amp;T</strong> – your AI-powered assistant that doesn't just search for answers… it <strong>creates them!</strong></p>
                             
-                            <!-- Imagine This Example -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="540" style="border-collapse: collapse; margin-bottom: 35px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 540px;">
+                            <!-- Imagine This Example - Now Clickable -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 35px; width: 100%;">
                                 <tr>
-                                    <td style="padding: 0; width: 540px;">
+                                    <td style="padding: 0;">
                                         <h3 style="color: #0057b8; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">Imagine This:</h3>
                                         
-                                        <!-- Example box with left border fallback for Outlook -->
+                                        <!-- Example box with left border fallback for Outlook - Now Clickable -->
                                         <!--[if mso]>
-                                        <table border="0" cellpadding="0" cellspacing="0" width="540" style="border-collapse: collapse; background-color: #333333; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 540px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; background-color: #333333; cursor: pointer; border-left: 3px solid #0057b8;">
+                                            <tr>
+                                                <td width="3" bgcolor="#0057b8" style="font-size: 0; line-height: 0; width: 3px;">&nbsp;</td>
+                                                <td style="padding: 20px;">
+                                                    <div style="position: absolute; top: 15px; right: 15px; background-color: rgba(0, 87, 184, 0.7); color: white; border-radius: 3px; padding: 2px 6px; font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                        Click for more
+                                                    </div>
+                                                    <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
                                         <![endif]-->
                                         <!--[if !mso]><!-->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="540" class="rounded-box" style="border-collapse: collapse; background-color: #333333; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 540px;">
-                                        <!--<![endif]-->
+                                        <a href="https://att.****/sites/ai-insights" style="text-decoration: none; color: inherit; display: block;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="rounded-box clickable-element" style="border-collapse: collapse; background-color: #333333; cursor: pointer; position: relative;">
                                             <tr>
-                                                <!-- Left border simulation for Outlook -->
                                                 <td width="3" bgcolor="#0057b8" style="font-size: 0; line-height: 0; width: 3px;">&nbsp;</td>
-                                                <td style="padding: 20px; width: 537px;">
-                                                    <!-- Image with explicit dimensions and fallback -->
+                                                <td style="padding: 20px;">
+                                                    <div class="interactive-indicator" style="position: absolute; top: 15px; right: 15px; background-color: rgba(0, 87, 184, 0.7); color: white; border-radius: 3px; padding: 2px 6px; font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                        Click for more
+                                                    </div>
+                                        <!--<![endif]-->
+                                                    <!-- Image with explicit dimensions and more robust Outlook handling -->
                                                     <!--[if mso]>
-                                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                                                         alt="Data Transformation" 
-                                                         width="537" 
-                                                         height="auto" 
-                                                         style="display: block; margin-bottom: 15px; border: 0; width: 537px; height: auto; max-width: 537px;" />
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center" style="border-collapse: collapse;">
+                                                        <tr>
+                                                            <td align="center" style="padding-bottom: 15px;">
+                                                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                                                     alt="Data Transformation" 
+                                                                     width="500" 
+                                                                     height="300" 
+                                                                     style="display: block; border: 0; width: 100%; max-width: 500px; height: auto;" />
+                                                            </td>
+                                                        </tr>
+                                                    </table>
                                                     <![endif]-->
                                                     <!--[if !mso]><!-->
                                                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
                                                          alt="Data Transformation" 
-                                                         width="537" 
-                                                         height="auto" 
-                                                         class="rounded-image" 
-                                                         style="display: block; margin-bottom: 15px; border: 0; width: 537px; height: auto; max-width: 537px;" />
+                                                         width="100%" 
+                                                         style="display: block; margin-bottom: 15px; border: 0; width: 100%; max-width: 500px; height: auto;" 
+                                                         class="rounded-image" />
                                                     <!--<![endif]-->
                                                     
                                                     <!-- Text fallback for when images are blocked -->
@@ -212,74 +226,115 @@
                                                     <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #e6e6e6; font-family: Arial, Helvetica, sans-serif;">
                                                         You're drowning in messy PDF tables, scrambling to extract numbers into Excel. One simple command to <strong>Ask AT&amp;T</strong>, and in seconds, it converts everything into a clean CSV—like magic!
                                                     </p>
+                                                <!--[if mso]>
+                                                    </a>
                                                 </td>
                                             </tr>
                                         </table>
+                                                <![endif]-->
+                                                <!--[if !mso]><!-->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        </a>
+                                        <!--<![endif]-->
                                     </td>
                                 </tr>
                             </table>
                             
-                            <!-- But That's Just the Beginning -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="540" style="border-collapse: collapse; margin-bottom: 35px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 540px;">
+                            <!-- But That's Just the Beginning with improved spacing and layout - Now Clickable -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 35px; width: 100%;">
                                 <tr>
-                                    <td style="padding: 0; width: 540px;">
+                                    <td style="padding: 0;">
                                         <h3 style="color: #0057b8; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">&#129327; But that's just the beginning...</h3>
                                         
-                                        <!-- Two-column layout for examples -->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="540" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 540px;">
+                                        <!-- Two-column layout for examples with improved Outlook compatibility - Now Clickable -->
+                                        <!--[if mso]>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                             <tr>
-                                                <!-- First column -->
-                                                <!--[if mso]>
-                                                <td width="260" style="background-color: #333333; padding: 20px; width: 260px;" valign="top">
-                                                <![endif]-->
-                                                <!--[if !mso]><!-->
-                                                <td width="260" class="rounded-box" style="background-color: #333333; padding: 20px; width: 260px;" valign="top">
-                                                <!--<![endif]-->
-                                                    <!-- Image with explicit dimensions -->
-                                                    <!--[if mso]>
+                                                <td style="padding: 0;" colspan="3">
+                                                    <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block; color: inherit;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                                            <tr>
+                                                                <td width="48%" valign="top" style="padding-right: 10px;">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; background-color: #333333; cursor: pointer; border-left: 3px solid #0057b8;">
+                                                                        <tr>
+                                                                            <td style="padding: 20px;">
+                                                                                <div style="position: absolute; top: 15px; right: 15px; background-color: rgba(0, 87, 184, 0.7); color: white; border-radius: 3px; padding: 2px 6px; font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                                                    Interactive
+                                                                                </div>
+                                        <![endif]-->
+                                        <!--[if !mso]><!-->
+                                        <a href="https://att.****/sites/ai-insights" style="text-decoration: none; color: inherit; display: block;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; cursor: pointer;">
+                                            <tr>
+                                                <td width="48%" valign="top" class="rounded-box clickable-element" style="background-color: #333333; padding: 20px; position: relative;">
+                                                    <div class="interactive-indicator" style="position: absolute; top: 15px; right: 15px; background-color: rgba(0, 87, 184, 0.7); color: white; border-radius: 3px; padding: 2px 6px; font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                        Interactive
+                                                    </div>
+                                        <!--<![endif]-->
+                                                    <!-- Image with explicit dimensions for Outlook -->
                                                     <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                                                         alt="Rap Battle" width="220" height="146" 
-                                                         style="display: block; margin-bottom: 10px; border: 0; width: 220px; height: 146px;" />
-                                                    <![endif]-->
-                                                    <!--[if !mso]><!-->
-                                                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                                                         alt="Rap Battle" width="220" height="146" 
-                                                         class="rounded-image" style="display: block; margin-bottom: 10px; border: 0; width: 220px; height: 146px;" />
-                                                    <!--<![endif]-->
+                                                         alt="Rap Battle" 
+                                                         width="100%" 
+                                                         style="display: block; margin-bottom: 10px; border: 0; width: 100%; max-width: 220px; height: auto;" 
+                                                         class="rounded-image" />
+                                                         
                                                     <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #e6e6e6; font-family: Arial, Helvetica, sans-serif;">
                                                         <strong>Need to explain quantum physics in a rap battle style?</strong> 
                                                         <span style="color: #0057b8; font-weight: bold;">Done.</span>
                                                     </p>
+                                        <!--[if mso]>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                                <td width="4%" style="font-size: 0; line-height: 0;">&nbsp;</td>
+                                                                <td width="48%" valign="top">
+                                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; background-color: #333333; cursor: pointer; border-left: 3px solid #0057b8;">
+                                                                        <tr>
+                                                                            <td style="padding: 20px;">
+                                                                                <div style="position: absolute; top: 15px; right: 15px; background-color: rgba(0, 87, 184, 0.7); color: white; border-radius: 3px; padding: 2px 6px; font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                                                    Interactive
+                                                                                </div>
+                                        <![endif]-->
+                                        <!--[if !mso]><!-->
                                                 </td>
-                                                
-                                                <!-- Column spacing for Outlook -->
-                                                <td width="20" style="font-size: 0; line-height: 0; width: 20px;">&nbsp;</td>
-                                                
-                                                <!-- Second column -->
-                                                <!--[if mso]>
-                                                <td width="260" style="background-color: #333333; padding: 20px; width: 260px;" valign="top">
-                                                <![endif]-->
-                                                <!--[if !mso]><!-->
-                                                <td width="260" class="rounded-box" style="background-color: #333333; padding: 20px; width: 260px;" valign="top">
+                                                <td width="4%" style="font-size: 0; line-height: 0;">&nbsp;</td>
+                                                <td width="48%" valign="top" class="rounded-box clickable-element" style="background-color: #333333; padding: 20px; position: relative;">
+                                                    <div class="interactive-indicator" style="position: absolute; top: 15px; right: 15px; background-color: rgba(0, 87, 184, 0.7); color: white; border-radius: 3px; padding: 2px 6px; font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                        Interactive
+                                                    </div>
                                                 <!--<![endif]-->
-                                                    <!-- Image with explicit dimensions -->
-                                                    <!--[if mso]>
+                                                    <!-- Image with explicit dimensions for Outlook -->
                                                     <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                                                         alt="Shakespeare" width="220" height="146" 
-                                                         style="display: block; margin-bottom: 10px; border: 0; width: 220px; height: 146px;" />
-                                                    <![endif]-->
-                                                    <!--[if !mso]><!-->
-                                                    <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
-                                                         alt="Shakespeare" width="220" height="146" 
-                                                         class="rounded-image" style="display: block; margin-bottom: 10px; border: 0; width: 220px; height: 146px;" />
-                                                    <!--<![endif]-->
+                                                         alt="Shakespeare" 
+                                                         width="100%" 
+                                                         style="display: block; margin-bottom: 10px; border: 0; width: 100%; max-width: 220px; height: auto;" 
+                                                         class="rounded-image" />
+                                                    
                                                     <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #e6e6e6; font-family: Arial, Helvetica, sans-serif;">
                                                         <strong>Want a business summary as a Shakespearean monologue?</strong> 
                                                         <span style="color: #0057b8; font-weight: bold;">No problem.</span>
                                                     </p>
+                                        <!--[if mso]>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </a>
                                                 </td>
                                             </tr>
                                         </table>
+                                        <![endif]-->
+                                        <!--[if !mso]><!-->
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        </a>
+                                        <!--<![endif]-->
                                     </td>
                                 </tr>
                             </table>
@@ -291,16 +346,31 @@
                                 </tr>
                             </table>
                             
-                            <!-- The Secret to Unlocking This Power -->
+                            <!-- The Secret to Unlocking This Power - Now Clickable -->
                             <table border="0" cellpadding="0" cellspacing="0" width="540" style="border-collapse: collapse; margin: 30px 0; width: 540px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                                 <tr>
                                     <td style="padding: 0; width: 540px;">
                                         <h3 style="color: #0057b8; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">&#128161; The secret to unlocking this power?</h3>
                                         
-                                        <table border="0" cellpadding="0" cellspacing="0" width="540" style="border-collapse: collapse; width: 540px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <!--[if mso]>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="540" style="border-collapse: collapse; width: 540px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; cursor: pointer; border-left: 3px solid #0057b8;">
+                                            <tr>
+                                                <td style="padding: 0;">
+                                                    <div style="position: absolute; top: 15px; right: 15px; background-color: rgba(0, 87, 184, 0.7); color: white; border-radius: 3px; padding: 2px 6px; font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                        Learn more
+                                                    </div>
+                                                    <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
+                                        <![endif]-->
+                                        <!--[if !mso]><!-->
+                                        <a href="https://att.****/sites/ai-insights" style="text-decoration: none; color: inherit; display: block;">
+                                        <!--<![endif]-->
+                                        <table border="0" cellpadding="0" cellspacing="0" width="540" class="clickable-element" style="border-collapse: collapse; width: 540px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; cursor: pointer; position: relative; border-left: 3px solid #0057b8; background-color: #333333;">
                                             <tr>
                                                 <!-- Image column with explicit dimensions -->
-                                                <td width="162" valign="middle" style="padding: 0; width: 162px;">
+                                                <td width="162" valign="middle" style="padding: 20px; width: 162px;">
+                                                    <div class="interactive-indicator" style="position: absolute; top: 15px; right: 15px; background-color: rgba(0, 87, 184, 0.7); color: white; border-radius: 3px; padding: 2px 6px; font-size: 10px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+                                                        Learn more
+                                                    </div>
                                                     <!--[if mso]>
                                                     <img src="https://images.unsplash.com/photo-1607798748738-b15c40d33d57?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
                                                          alt="Prompt Engineering" width="162" height="162" 
@@ -324,6 +394,15 @@
                                                 </td>
                                             </tr>
                                         </table>
+                                        <!--[if mso]>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <![endif]-->
+                                        <!--[if !mso]><!-->
+                                        </a>
+                                        <!--<![endif]-->
                                     </td>
                                 </tr>
                             </table>
@@ -381,182 +460,65 @@
                             </table>
                             
                             <!-- Ready to Level Up -->
-                                                                <!--[if mso]>
-                                                                <table border="0" cellpadding="0" cellspacing="0" width="540" style="border-collapse: collapse; margin: 40px 0 20px 0; background-color: #333333; width: 540px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                                                                <![endif]-->
-                                                                <!--[if !mso]><!-->
-                                                                <table border="0" cellpadding="0" cellspacing="0" width="540" class="rounded-box" style="border-collapse: collapse; margin: 40px 0 20px 0; background-color: #333333; width: 540px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                                                                <!--<![endif]-->
-                                                                    <tr>
-                                                                        <td align="center" style="padding: 25px 20px; width: 540px;">
-                                                                            <!-- Image with explicit dimensions -->
-                                                                            <!--[if mso]>
-                                                                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                                                                                 alt="Level Up" width="270" height="180" 
-                                                                                 style="display: block; margin-bottom: 15px; border: 0; width: 270px; height: 180px;" />
-                                                                            <![endif]-->
-                                                                            <!--[if !mso]><!-->
-                                                                            <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                                                                                 alt="Level Up" width="270" height="180" 
-                                                                                 class="rounded-image" style="display: block; margin-bottom: 15px; border: 0; width: 270px; height: 180px;" />
-                                                                            <!--<![endif]-->
-                                                                            
-                                                                            <p style="font-size: 20px; font-weight: bold; color: #e6e6e6; margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">
-                                                                                <strong style="color: #0057b8;">Ready to level up?</strong> Start asking. Start winning.
-                                                                            </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                        
-                                                        <!-- CTA Button with improved VML for Outlook -->
-                                                        <tr>
-                                                            <td align="center" style="padding: 0 50px 45px 50px;">
-                                                                <!-- Outlook VML button -->
-                                                                <!--[if mso]>
-                                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://att.****/sites/ai-insights" style="height:50px;v-text-anchor:middle;width:280px;" arcsize="50%" stroke="f" fillcolor="#0057b8">
-                                                                  <w:anchorlock/>
-                                                                  <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">TRY ASK AT&amp;T NOW</center>
-                                                                </v:roundrect>
-                                                                <![endif]-->
-                                                                
-                                                                <!-- Fallback for non-Outlook clients -->
-                                                                <![if !mso]>
-                                                                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 280px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                                                                    <tr>
-                                                                        <td align="center" bgcolor="#0057b8" class="rounded-button shadow" style="padding: 16px 30px; width: 280px;">
-                                                                            <a href="https://att.****/sites/ai-insights" style="display: inline-block; color: white; text-decoration: none; font-weight: bold; font-size: 16px; font-family: Arial, Helvetica, sans-serif;">TRY ASK AT&amp;T NOW</a>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                                <![endif]>
-                                                            </td>
-                                                        </tr>
-                                                        
-                                                        <!-- View in browser reminder in footer -->
-                                                        <tr>
-                                                            <td align="center" style="padding: 0 50px 20px 50px;">
-                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                                                                    <tr>
-                                                                        <td align="center" style="border-top: 1px solid #444444; padding-top: 15px;">
-                                                                            <p style="margin: 0; font-size: 12px; color: #999999; font-family: Arial, Helvetica, sans-serif;">
-                                                                                Having trouble viewing this email? Right-click → Save As → Open in browser
-                                                                            </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                        
-                                                        <!-- Footer with improved spacing -->
-                                                        <tr>
-                                                            <td bgcolor="#222222" style="padding: 25px; text-align: center; border-top: 1px solid #444444;">
-                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 10px;">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <p style="margin: 0; font-size: 14px; color: #888888; font-family: Arial, Helvetica, sans-serif;">Best regards,<br />The Ask AT&amp;T Team</p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 15px;">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <p style="margin: 0; font-size: 13px; color: #888888; font-family: Arial, Helvetica, sans-serif;">#AIProductivity #SuperhumanWork #AskATT</p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <p style="margin: 0; font-size: 12px; color: #666666; font-family: Arial, Helvetica, sans-serif;">© 2025 AT&amp;T Intellectual Property. All rights reserved.</p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
+                            <!--[if mso]>
+                            <table border="0" cellpadding="0" cellspacing="0" width="540" style="border-collapse: collapse; margin: 40px 0 20px 0; background-color: #333333; width: 540px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <![endif]-->
+                            <!--[if !mso]><!-->
+                            <table border="0" cellpadding="0" cellspacing="0" width="540" class="rounded-box" style="border-collapse: collapse; margin: 40px 0 20px 0; background-color: #333333; width: 540px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <!--<![endif]-->
+                                <tr>
+                                    <td align="center" style="padding: 25px 20px; width: 540px;">
+                                        <!-- Image with explicit dimensions -->
+                                        <!--[if mso]>
+                                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                             alt="Level Up" width="270" height="180" 
+                                             style="display: block; margin-bottom: 15px; border: 0; width: 270px; height: 180px;" />
+                                        <![endif]-->
+                                        <!--[if !mso]><!-->
+                                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                             alt="Level Up" width="270" height="180" 
+                                             class="rounded-image" style="display: block; margin-bottom: 15px; border: 0; width: 270px; height: 180px;" />
+                                        <!--<![endif]-->
+                                        
+                                        <p style="font-size: 20px; font-weight: bold; color: #e6e6e6; margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">
+                                            <strong style="color: #0057b8;">Ready to level up?</strong> Start asking. Start winning.
+                                        </p>
                                     </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                     
-                    <!-- CTA Button with improved VML for Outlook -->
+                    <!-- CTA Button with VML for Outlook with improved compatibility -->
                     <tr>
                         <td align="center" style="padding: 0 50px 45px 50px;">
-                            <!-- Outlook VML button -->
-                                                                <!--[if mso]>
-                                                                <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://att.****/sites/ai-insights" style="height:50px;v-text-anchor:middle;width:280px;" arcsize="50%" stroke="f" fillcolor="#0057b8">
-                                                                  <w:anchorlock/>
-                                                                  <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">TRY ASK AT&amp;T NOW</center>
-                                                                </v:roundrect>
-                                                                <![endif]-->
-                                                                
-                                                                <!-- Fallback for non-Outlook clients -->
-                                                                <![if !mso]>
-                                                                <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 280px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                                                                    <tr>
-                                                                        <td align="center" bgcolor="#0057b8" class="rounded-button shadow" style="padding: 16px 30px; width: 280px;">
-                                                                            <a href="https://att.****/sites/ai-insights" style="display: inline-block; color: white; text-decoration: none; font-weight: bold; font-size: 16px; font-family: Arial, Helvetica, sans-serif;">TRY ASK AT&amp;T NOW</a>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                                <![endif]>
-                                                            </td>
-                                                        </tr>
-                                                        
-                                                        <!-- View in browser reminder in footer -->
-                                                        <tr>
-                                                            <td align="center" style="padding: 0 50px 20px 50px;">
-                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-                                                                    <tr>
-                                                                        <td align="center" style="border-top: 1px solid #444444; padding-top: 15px;">
-                                                                            <p style="margin: 0; font-size: 12px; color: #999999; font-family: Arial, Helvetica, sans-serif;">
-                                                                                Having trouble viewing this email? Right-click → Save As → Open in browser
-                                                                            </p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                        
-                                                        <!-- Footer with improved spacing -->
-                                                        <tr>
-                                                            <td bgcolor="#222222" style="padding: 25px; text-align: center; border-top: 1px solid #444444;">
-                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 10px;">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <p style="margin: 0; font-size: 14px; color: #888888; font-family: Arial, Helvetica, sans-serif;">Best regards,<br />The Ask AT&amp;T Team</p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 15px;">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <p style="margin: 0; font-size: 13px; color: #888888; font-family: Arial, Helvetica, sans-serif;">#AIProductivity #SuperhumanWork #AskATT</p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                                    <tr>
-                                                                        <td>
-                                                                            <p style="margin: 0; font-size: 12px; color: #666666; font-family: Arial, Helvetica, sans-serif;">© 2025 AT&amp;T Intellectual Property. All rights reserved.</p>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </td>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
+                            <!-- Outlook VML button with proper alignment and enhanced styling -->
+                            <!--[if mso]>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://att.****/sites/ai-insights" style="height:50px;v-text-anchor:middle;width:280px;" arcsize="50%" stroke="f" fillcolor="#0057b8">
+                              <w:anchorlock/>
+                              <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">TRY ASK AT&amp;T NOW</center>
+                            </v:roundrect>
+                            <![endif]-->
+                            
+                            <!-- Fallback for non-Outlook clients with improved styling -->
+                            <![if !mso]>
+                            <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 280px;">
+                                <tr>
+                                    <td align="center" bgcolor="#0057b8" class="rounded-button shadow" style="padding: 16px 30px; transition: background-color 0.3s ease;">
+                                        <a href="https://att.****/sites/ai-insights" style="display: inline-block; color: white; text-decoration: none; font-weight: bold; font-size: 16px; font-family: Arial, Helvetica, sans-serif;">TRY ASK AT&amp;T NOW</a>
                                     </td>
                                 </tr>
                             </table>
+                            <![endif]>
+                        </td>
+                    </tr>
+                    
+                    <!-- Footer -->
+                    <tr>
+                        <td bgcolor="#222222" style="padding: 25px; text-align: center; border-top: 1px solid #444444;">
+                            <p style="margin: 0 0 10px 0; font-size: 14px; color: #888888; font-family: Arial, Helvetica, sans-serif;">Best regards,<br />The Ask AT&amp;T Team</p>
+                            <p style="margin: 0; font-size: 13px; color: #888888; font-family: Arial, Helvetica, sans-serif;">#AIProductivity #SuperhumanWork #AskATT</p>
+                            <p style="margin: 15px 0 0 0; font-size: 12px; color: #666666; font-family: Arial, Helvetica, sans-serif;">© 2025 AT&amp;T Intellectual Property. All rights reserved.</p>
                         </td>
                     </tr>
                 </table>
