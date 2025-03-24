@@ -55,6 +55,14 @@
         /* Outlook-specific spacing */
         .mso-spacing {mso-line-height-rule: exactly;}
         .mso-padding {padding: 20px !important;}
+        
+        /* View in browser notice */
+        .view-in-browser {
+            font-size: 12px;
+            color: #999999;
+            text-align: center;
+            padding: 5px 0;
+        }
     </style>
 </head>
 <body style="margin: 0; padding: 0; background-color: #1e1e1e; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
@@ -76,6 +84,15 @@
                 <!--[if !mso]><!-->
                 <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-table shadow" style="border-collapse: collapse; background-color: #2a2a2a; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
                 <!--<![endif]-->
+                    <!-- View in browser notice -->
+                    <tr>
+                        <td align="center" style="padding: 10px 20px; background-color: #222222;">
+                            <p style="margin: 0; font-size: 12px; color: #999999; font-family: Arial, Helvetica, sans-serif;">
+                                For best viewing experience: Right-click anywhere in this email → Select "Save As" → Save the HTML file → Open in your web browser
+                            </p>
+                        </td>
+                    </tr>
+                    
                     <!-- Header with VML background for Outlook -->
                     <tr>
                         <td align="center" bgcolor="#0057b8" style="padding: 40px 30px; text-align: center;">
@@ -417,6 +434,21 @@
                                                             </td>
                                                         </tr>
                                                         
+                                                        <!-- View in browser reminder in footer -->
+                                                        <tr>
+                                                            <td align="center" style="padding: 0 50px 20px 50px;">
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                    <tr>
+                                                                        <td align="center" style="border-top: 1px solid #444444; padding-top: 15px;">
+                                                                            <p style="margin: 0; font-size: 12px; color: #999999; font-family: Arial, Helvetica, sans-serif;">
+                                                                                Having trouble viewing this email? Right-click → Save As → Open in browser
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                        
                                                         <!-- Footer with improved spacing -->
                                                         <tr>
                                                             <td bgcolor="#222222" style="padding: 25px; text-align: center; border-top: 1px solid #444444;">
@@ -474,6 +506,21 @@
                                                                     </tr>
                                                                 </table>
                                                                 <![endif]>
+                                                            </td>
+                                                        </tr>
+                                                        
+                                                        <!-- View in browser reminder in footer -->
+                                                        <tr>
+                                                            <td align="center" style="padding: 0 50px 20px 50px;">
+                                                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                                    <tr>
+                                                                        <td align="center" style="border-top: 1px solid #444444; padding-top: 15px;">
+                                                                            <p style="margin: 0; font-size: 12px; color: #999999; font-family: Arial, Helvetica, sans-serif;">
+                                                                                Having trouble viewing this email? Right-click → Save As → Open in browser
+                                                                            </p>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
                                                             </td>
                                                         </tr>
                                                         
