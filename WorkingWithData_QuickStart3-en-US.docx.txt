@@ -1,0 +1,127 @@
+﻿WorkingWithData_QuickStart3
+
+0:00
+Welcome to another Ask AT&T Quick Start where we try to do something awesome in 5 minutes or less with Ask AT&T.
+
+0:09
+This video we're going to be looking at how you can interact with some data.
+
+0:13
+Now just to be clear, Ask AT&T is not the best tool for interacting with large data sets.
+
+0:20
+There are better tools, however, Ask AT&T as a large language model is pretty good with dealing with words.
+
+0:28
+So we're going to show a few tricks today and how you can use Ask AT&T to help you out.
+
+0:34
+So this is a common problem.
+
+0:37
+You're doing some research and you come across a PDF that has some information you want, but since it's in a PDF, you can't really manipulate or work with the data.
+
+0:46
+If you try to paste this into Excel, you just get a mess.
+
+0:51
+So what I'm going to do is I'm going to select the data.
+
+0:54
+I'm going to go ahead and just copy it.
+
+0:57
+I'm going to go to Ask AT&T and I'm going to say convert the following information into a CSV, right, a comma separated values arrangement so that I can easily just paste it into Excel.
+
+1:16
+Now just to be clear, you can see we've got commas in the numbers, so we can go ahead and check and see how Ask AT&T does converting this text into CSV and there it is.
+
+1:34
+So this trick doesn't always work, but just know it's a pretty good way to take information and PDFs or other text based formats and convert them into something that you can manipulate with it with Excel and run analysis on.
+
+1:51
+So there's one great example.
+
+1:56
+So another way that you can use Ask AT&T with text is doing basically sentiment analysis.
+
+2:04
+So I've generated a fake list about puppies using Ask AT&T by the way, and I'm going to go ahead and ask some questions.
+
+2:13
+So how many comments from the following list are positive?
+
+2:21
+Now obviously, I could go through and count this, but let's just go ahead and have Ask AT&T do this for us.
+
+2:38
+And so here's the comments.
+
+2:39
+Remember, they're fake.
+
+2:40
+I just had to ask AT&T generate them so that we would have some content that we could ask a question about.
+
+2:48
+And so we've got our result.
+
+2:51
+So here it is in the list provided.
+
+2:52
+There are 12 comments that can be considered positive.
+
+2:56
+So again it has gone through, it's analyzed it and it is giving us based on this text, a number and it goes ahead and gives us a summary.
+
+3:04
+Of course, if we want more detailed information, we can make a better prompt with more context and with more detail so that we get additional information.
+
+3:13
+Just to show another way that we could use this, what is the most negative comment from the following list?
+
+3:24
+Now again, we're not defining negativity, we're not defining most.
+
+3:30
+We're not providing additional parameters that would give us better results.
+
+3:34
+But we're just going to go ahead and use Ask AT&T out-of-the-box to help us sort some text.
+
+3:41
+And here it is.
+
+3:42
+I don't understand the hype about puppies.
+
+3:45
+So it went ahead and picked the most negative comment from that list.
+
+3:51
+So there you have it, Two quick and easy ways you can use ASK AT&T to help you with text based data.
+
+3:59
+So think about that.
+
+4:00
+What are the challenges that you have around data?
+
+4:04
+Around analyzing text, around sorting text, around converting text based information that you can write prompts for and use?
+
+4:15
+Ask AT&T to help out If you find a prompt that works great, as always, please share it.
+
+4:22
+You can put it down below or fill out our form for our prompt Hall of Fame.
+
+4:28
+Until the next video.
+
+4:29
+Keep at it.
+
+4:30
+Happy prompting.

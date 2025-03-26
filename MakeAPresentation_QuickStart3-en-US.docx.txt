@@ -1,0 +1,187 @@
+﻿MakeAPresentation_QuickStart3
+
+0:00
+Welcome to another ASK AT&T Quick Start.
+
+0:03
+So the goal of every one of these videos is to learn something useful in 5 minutes or less.
+
+0:08
+The last video we learned how to find and shape information.
+
+0:11
+In this one, we're going to be learning about how to make a presentation draft really easily.
+
+0:16
+So let's just go ahead and dive right in.
+
+0:19
+Here's the scenario you need to do an E Sports presentation.
+
+0:23
+And so let's just start with the basics.
+
+0:26
+Make a presentation on E Sports.
+
+0:32
+As we know, Ask AT&T will do everything it can to respond to a prompt.
+
+0:38
+By the way, This is why sometimes Ask AT&T can make mistakes.
+
+0:43
+It can give different information or inaccurate information because it's trying to respond to every single prompt.
+
+0:49
+So always make sure you check it.
+
+0:51
+But regardless, this one's pretty straightforward.
+
+0:54
+Make a presentation on E Sports and here we go.
+
+0:57
+So we've got slides, we've got bullet points, pretty helpful in terms of a presentation, but this isn't quite what I needed.
+
+1:07
+And the goal of every prompt is to get us as close as possible to what we need in one prompt.
+
+1:14
+So what we're going to do is we're going to add a lot more context in the scenario here is that, you know your kids school or something asked you to help out.
+
+1:22
+And so we've got a very specific audience here of junior high students and and really it's about helping them create a a really robust winning wired network for E sports.
+
+1:33
+So we want to Add all of that context.
+
+1:37
+So let's start again.
+
+1:38
+You are giving a presentation to junior high students, right?
+
+1:46
+We're giving some audience, we're giving some context on the basics of a wired network for esports, so that'll get us a lot closer.
+
+1:56
+But let's be more specific, Make a brief 10 minute presentation that will be on PowerPoint slides.
+
+2:08
+So again, we're giving a lot more context so that asks AT&T knows how to respond.
+
+2:13
+For each slide, make a title and bullet points.
+
+2:19
+At the end of the slides information, write a script For the entire presentation, include at least one dad joke about E Sports.
+
+2:39
+We'll see what Ask AT&T comes up with now just know with these longer prompts or where we're really asking it to generate a lot more information, it can take a little while.
+
+2:50
+So don't be surprised if it takes a little while for it to respond.
+
+2:58
+And here we go.
+
+2:59
+So when we look here, we've got our slides, we've got the bullet points and we have our script.
+
+3:09
+So we've got everything right here, and Dad joke of the day didn't quite interpret what we wanted so we could refine that prompt a little bit more.
+
+3:18
+But right here, why did the E Sports player go broke?
+
+3:22
+Because he couldn't find any LAN parties to attend.
+
+3:25
+Not sure if that's as good of a joke as I would have wanted, but you can see it tried.
+
+3:30
+So we've got all of the components here.
+
+3:33
+Not great, but it's pretty good for how quickly we pulled this together.
+
+3:37
+But let's try one more trick and see if this works.
+
+3:40
+So I'm going to go ahead and copy this information that we've got here in the slides and I'm going to go to a blank Word Online document.
+
+3:52
+I'm going to go ahead and paste it in.
+
+3:53
+So here is our presentation.
+
+3:56
+I'm going to go to file export, Export to PowerPoint presentation.
+
+4:02
+Now you'll note this says preview.
+
+4:04
+That's because this is an experimental feature, so sometimes it doesn't work.
+
+4:08
+You can see behind the scenes it has interpreted what we've been trying to do.
+
+4:12
+So introduction of wire networks for E sports, I'll go ahead and select that.
+
+4:16
+I'll hit export.
+
+4:18
+We get this great little graphic and our presentation is ready.
+
+4:21
+So now I'm going to click open presentation and here it is.
+
+4:26
+Here is our first draft PowerPoint presentation from the stuff that we just didn't ask AT&T.
+
+4:33
+And you can even say, see, it has added some graphics trying to interpret what we've been talking about.
+
+4:39
+Here's all of our bullet points.
+
+4:41
+And again, here we've got the same graphic, but of course there's other options.
+
+4:45
+And then we've got some of our, you know, got our joke icon.
+
+4:50
+So again, you can see where this is going, where we'll be able to make incredible presentations very quickly.
+
+4:59
+And of course those will be on brand unlike this and other things.
+
+5:02
+But that's the direction that generative AI is going.
+
+5:05
+So get used to it now and get started.
+
+5:08
+So let's go ahead and go back to ask AT&T and just think about this a minute.
+
+5:13
+How quickly can you generate a presentation on different topics for different audiences, for different durations?
+
+5:21
+With all of that detail and all of that context in your prompt, you can get very close very quickly to where you needed to go.
+
+5:31
+If you find a prompt that works really well for you, make sure you share it down below, or you can submit it for our prompt Hall of Fame until the next video.
+
+5:42
+Happy prompting and keep at it.

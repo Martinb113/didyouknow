@@ -29,120 +29,112 @@ Hi there,
 [Try Ask AT&T Now]
 
 Best regards,
-The Ask AT&T Team
+The TIP Team
 
 ---
+## Email 2: Professional Communications and Productivity Hack
 
-## Email 2: Mastering Information with Ask AT&T
-**Subject Line:** 💡 Shape Information Like a Pro with Ask AT&T
+**Subject Line:** ✍️ Transform Your Communications with Ask AT&T
 
-**Preview Text:** What if you could craft information exactly the way you want—saving time and boosting productivity?
+**Preview Text:** Did you know? Tailoring your message to the right audience can boost engagement by 80%.
 
 ---
 
 Hi there,
 
-🧑‍💻 **What if you had an AI that doesn't just answer your questions… but actually shapes responses tailored to your needs?**
+Meet Sarah. She faced 100+ daily customer emails requiring different tones and technical levels—until Ask AT&T transformed her workflow.
 
-Let's compare:
-- Google? It gives you a list of links
-- Ask AT&T? It generates the answer—crafted just for you
+**Her Success:**
+- Drafted perfect communications in seconds
+- Tailored content for technical and non-technical audiences  
+- Turned long documents into concise summaries
+- Achieved 95% customer satisfaction with personalized responses
 
-**Real-World Example:**
-Need to explain AT&T Dedicated Internet to a school superintendent? Ask AT&T can generate multiple versions—a formal proposal, a simple explanation, or even a visual analogy comparing it to a high-speed highway for data!
+**Powerful Communication Transformations:**
+✅ Turn complex technical content into friendly explanations
+✅ Convert your draft ideas into polished social media posts
+✅ Rewrite lengthy documents into executive-ready memos
+✅ Craft the perfect tone for any audience with simple word changes
 
-📊 **Data headache?** No problem.
-Just say: "Convert this table to CSV."
-BOOM. Instant, usable data.
+**Your Communication Upgrade:**
+Let Ask AT&T help you craft clear, professional messages every time—for any audience, in any format.
 
-**Pro Tip:** The more you refine your prompts, the smarter your AI becomes.
+[Start Writing Better]
 
-[Start Shaping Information]
+Best regards,
+The TIP Team
+
+---
+
+---
+## Email 3: Creative Brainstorming Power
+
+**Subject Line:** 💡 Unlock Unlimited Creative Ideas with Ask AT&T Brainstorming
+
+**Preview Text:** Turn "creative block" into a flood of innovative ideas in just minutes.
+
+---
+
+Hi there,
+
+Meet Mark. His marketing team hit a creative wall while preparing for a major product launch. Then they discovered Ask AT&T's brainstorming techniques.
+
+**The Breakthrough:**
+- Generated 50 campaign concepts in under 2 minutes
+- Asked Ask AT&T to identify and explain the 10 strongest ideas
+- Refined the top concept with provocative variations using "be risky and eye-catching"
+- Launched their most successful campaign to date
+- Gained 50K new leads with minimal effort
+
+**The 3-Step Brainstorming Method:**
+1️⃣ Go big first: "Generate 50 ways to [your challenge]"
+2️⃣ Filter intelligently: "Pick the 10 best and explain why"
+3️⃣ Refine with direction: "Make 10 variations that are provocative and eye-catching"
+
+**Why Brainstorming with Ask AT&T Works:**
+✅ Low-risk creativity that pushes boundaries - "be provocative and risky"
+✅ Generate quantity AND quality through AI-powered filtering
+✅ Continuous refinement from broad concepts to specific implementations
+✅ Ask for variations that are "eye-catching" to stand out from competitors
+
+**Your Brainstorming Upgrade:**
+Whether you need presentation titles, product names, marketing strategies, or solutions to close deals - Ask AT&T helps you explore possibilities you'd never imagine on your own.
+
+[Start Brainstorming Now]
 
 Best regards,
 The Ask AT&T Team
 
 ---
 
-## Email 3: Data Mastery
-**Subject Line:** 📊 Turn Raw Data into Gold with Ask AT&T
+## Email 4: Meeting Efficiency
+**Subject Line:** ⚡ Transform Your Meeting Notes with Ask AT&T
 
-**Preview Text:** Did you know? Raw data is useless without insights. Let's change that.
-
----
-
-Hi there,
-
-Meet Karen. Her sales team was stuck, drowning in spreadsheets and reports. Then she discovered Ask AT&T Quick Start.
-
-**The Result?**
-- Uncovered hidden trends in their data
-- Boosted Q4 revenue by 30%
-- Made decisions in minutes, not days
-
-**Your Turn:**
-Transform your data into actionable insights with Ask AT&T Quick Start.
-
-[Start Analyzing Data]
-
-Best regards,
-The Ask AT&T Team
-
----
-
-## Email 4: Excel & Code Automation
-**Subject Line:** ⚡ Automate Your Work with Ask AT&T - No Coding Required!
-
-**Preview Text:** Did you know? You don't need to be a coding expert to automate tasks.
+**Preview Text:** Did you know? Employees spend 3+ hours weekly on meeting notes.
 
 ---
 
 Hi there,
 
-Meet John. He was spending hours on spreadsheets until Ask AT&T Quick Start changed everything.
-
-**What He Achieved:**
-- Automated invoicing
-- Generated Python scripts for data analysis
-- Freed up time for team innovation
-
-**Your Opportunity:**
-Let Ask AT&T Quick Start handle the technical heavy lifting while you focus on what matters most.
-
-[Start Automating]
-
-Best regards,
-The Ask AT&T Team
-
----
-
-## Email 5: Creative Brainstorming
-**Subject Line:** 💡 Unlock Your Team's Creative Potential with Ask AT&T
-
-**Preview Text:** Did you know? The best ideas often come from collaboration—even with AI.
-
----
-
-Hi there,
-
-Meet Mark. His marketing team hit a creative wall. Then they discovered Ask AT&T Quick Start.
+Meet Emily. After a 2-hour strategy call, she used Ask AT&T Quick Start to transform her meeting notes.
 
 **The Results:**
-- Generated 20 campaign angles in 5 minutes
-- Launched a viral campaign
-- Gained 50K new leads
+- Generated instant summaries
+- Created clear action items
+- Earned CEO recognition
+- Executed plans flawlessly
 
-**Your Creative Boost:**
-Let Ask AT&T Quick Start spark your next big idea.
+**Your Meeting Upgrade:**
+Turn your next meeting notes into actionable insights.
 
-[Start Brainstorming]
+[Start Summarizing Meetings]
 
 Best regards,
-The Ask AT&T Team
+The Ask AT&T Team 
 
 ---
 
-## Email 6: Presentation Mastery
+## Email 5: Presentation Mastery -> MakePresentation - Quickstart
 **Subject Line:** 🎯 Create Stunning Presentations in Minutes with Ask AT&T
 
 **Preview Text:** Did you know? 80% of professionals dread making presentations. Let's change that.
@@ -169,33 +161,60 @@ The Ask AT&T Team
 
 ---
 
-## Email 7: Professional Communications
-**Subject Line:** ✍️ Master Professional Communication with Ask AT&T
+## Email 6: Data Mastery - working with data - Quick start
+**Subject Line:** 📊 Turn Raw Data into Gold with Ask AT&T
 
-**Preview Text:** Did you know? Poorly written emails cost businesses 8% of annual revenue.
+**Preview Text:** Did you know? Raw data is useless without insights. Let's change that.
 
 ---
 
 Hi there,
 
-Meet Sarah. She faced 100+ daily customer emails until Ask AT&T Quick Start came to the rescue.
+Meet Karen. Her sales team was stuck, drowning in spreadsheets and reports. Then she discovered Ask AT&T Quick Start.
 
-**Her Success:**
-- Replied in half the time
-- Created tailored responses
-- Achieved 95% customer satisfaction
+**The Result?**
+- Uncovered hidden trends in their data
+- Boosted Q4 revenue by 30%
+- Made decisions in minutes, not days
 
-**Your Communication Upgrade:**
-Let Ask AT&T Quick Start help you craft clear, professional messages every time.
+**Your Turn:**
+Transform your data into actionable insights with Ask AT&T Quick Start.
 
-[Start Writing Better]
+[Start Analyzing Data]
 
 Best regards,
 The Ask AT&T Team
 
+
+-------
+
+## Email **: Excel & Code Automation -> Quick Start
+**Subject Line:** ⚡ Automate Your Work with Ask AT&T - No Coding Required!
+
+**Preview Text:** Did you know? You don't need to be a coding expert to automate tasks.
+
 ---
 
-## Email 8: Prompt Engineering
+Hi there,
+
+Meet John. He was spending hours on spreadsheets until Ask AT&T Quick Start changed everything.
+
+**What He Achieved:**
+- Automated invoicing
+- Generated Python scripts for data analysis
+- Freed up time for team innovation
+
+**Your Opportunity:**
+Let Ask AT&T Quick Start handle the technical heavy lifting while you focus on what matters most.
+
+[Start Automating]
+
+Best regards,
+The Ask AT&T Team
+
+-------
+
+## Email **: Prompt Engineering Advanced - Youtube??
 **Subject Line:** 🎯 Master the Art of Prompting with Ask AT&T
 
 **Preview Text:** Did you know? Better prompts = better results.
@@ -221,27 +240,3 @@ The Ask AT&T Team
 
 ---
 
-## Email 9: Meeting Efficiency
-**Subject Line:** ⚡ Transform Your Meeting Notes with Ask AT&T
-
-**Preview Text:** Did you know? Employees spend 3+ hours weekly on meeting notes.
-
----
-
-Hi there,
-
-Meet Emily. After a 2-hour strategy call, she used Ask AT&T Quick Start to transform her meeting notes.
-
-**The Results:**
-- Generated instant summaries
-- Created clear action items
-- Earned CEO recognition
-- Executed plans flawlessly
-
-**Your Meeting Upgrade:**
-Turn your next meeting notes into actionable insights.
-
-[Start Summarizing Meetings]
-
-Best regards,
-The Ask AT&T Team 

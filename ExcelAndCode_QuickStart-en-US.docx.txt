@@ -1,0 +1,97 @@
+﻿ExcelAndCode_QuickStart
+
+0:01
+Welcome to another ASK ATT quick start.
+
+0:04
+So in this one we will be learning how to use ASK ATT for Microsoft Excel and code.
+
+0:12
+It's really powerful how it can take plain language and turn it into something very functional.
+
+0:19
+So perfect example.
+
+0:21
+I'm just gonna go ahead and start with a simple prompt, like always right Excel formula to add up all the numbers in the first column.
+
+0:38
+Now I think a lot of people are probably thinking, Oh well that sum and the first column is a.
+
+0:44
+And of course, you can help ask AT&T along the way, but it obviously knew that and it got the answer right.
+
+0:52
+So it gave us the formula and we can just cut and paste that into Excel just to show that it can do more complicated things.
+
+1:01
+Let's give it a tougher one, right?
+
+1:04
+An Excel formula to count the number of unique values in column A.
+
+1:13
+As always, the more specificity that we give and our prompt, the more likely that we're going to get a correct response or a useful response to our prompt quickly.
+
+1:24
+And there it is.
+
+1:25
+So we got the formula as well as a little bit of directions on how to use it.
+
+1:31
+So again, really simple, powerful use.
+
+1:35
+Take plain English sentences and convert them into powerful Microsoft Excel formulas.
+
+1:42
+You can use this for Power BI, by the way, and other tools.
+
+1:46
+It's got a ton of languages in it, just to demo what that might look like.
+
+1:51
+There's a lot of caveats, just to be clear, and concerns, so you need to be careful if you're using code from Ask AT&T.
+
+1:59
+But I want to show that it can do it.
+
+2:01
+So write a Python script.
+
+2:05
+We'll give it the same thing to count the unique numbers.
+
+2:11
+Sorry, the unique values in a set of numbers.
+
+2:18
+So we'll go ahead and give it a simple prompt and we'll see what we get.
+
+2:32
+And there we go.
+
+2:34
+So you can see we get the Python code right there.
+
+2:39
+It's very clearly code.
+
+2:41
+We can copy it very easily here, and we get a little bit of context and instructions in how to use the code.
+
+2:49
+So just know this is a simple, powerful use of ASK AT&T.
+
+2:55
+Just have it convert English sentences into Microsoft Excel formulas and it will help you on your way.
+
+3:03
+If you find a prompt that works really well for you or some sort of amazing example, please share it down below and if you want, you can always submit it for our prompt Hall of Fame.
+
+3:15
+Until then, happy prompting.
+
+3:17
+Keep at it.

@@ -1,0 +1,196 @@
+﻿Brainstorming_QuickStart4
+
+0:01
+Welcome to another Ask AT&T Quick Start, where in each video we try to learn something awesome and extremely helpful in 5 minutes or less.
+
+0:11
+So in this video we're going to be looking at how we can use Ask AT&T for brainstorming.
+
+0:16
+This is one of my favorite uses for generative AI, and it's a really great activity because brainstorming is low risk.
+
+0:26
+Ask AT&T is really robust.
+
+0:28
+You can push it in different directions and it is not going to break.
+
+0:32
+So let's just go ahead and start with, again, a very generic prompt.
+
+0:37
+Tell me ways to close a deal with a customer.
+
+0:43
+Now, again, if you've been watching these videos, you probably understand, man, there's a lot of context that we could add.
+
+0:49
+But let's go ahead and just get started to see how we can use some different techniques in brainstorming with Ask AT&T to get really helpful results.
+
+1:00
+So here we go.
+
+1:02
+We've got some very generic response from ASK AT&T.
+
+1:06
+We haven't really given it any context, but that's OK, right?
+
+1:10
+We've got some information here.
+
+1:13
+So let's, since we're brainstorming, try something a little different.
+
+1:18
+So tell me 50 ways to close a deal with a customer.
+
+1:26
+Then pick the 10 best ideas and tell me why these ten are the best ideas.
+
+1:41
+So again, what we're doing is we are giving an instruction and we're helping Ask AT&T think through its reasoning and be a little bit more transparent with where it's coming up with its answer.
+
+1:56
+So by doing this, we get a nice big brainstorm session, but we also get closer to where we want to be and the best ideas faster.
+
+2:11
+OK, there we go.
+
+2:12
+So you can see we have 50 ideas right here.
+
+2:17
+Boom, boom, boom.
+
+2:18
+And then down here we have the 10 best ways according to ask AT&T and let's just double check here.
+
+2:26
+So build, report, demonstrate value.
+
+2:29
+Let's see if it went in order 10 collaborate on a solution.
+
+2:35
+Let's see if those Nope, you can see it actually thought through and did not just give the 1st 10 that it spit out.
+
+2:42
+So this is one of the really cool features with Ask AT&T and other large language models and generative AI.
+
+2:51
+You can help it think through various brainstorming scenarios.
+
+2:55
+Let me show you a real example, just for fun.
+
+2:59
+To show how you can kind of play around with this in another way and get to different answers, you are giving a presentation on the importance of 5G at a higher education conference.
+
+3:19
+Write 50 catchy titles for this presentation.
+
+3:25
+Then pick the 10 best titles and explain why they are the best.
+
+3:35
+So again, very similar format.
+
+3:38
+Big number.
+
+3:40
+Narrow it down and then provide an explanation as to why these are the best.
+
+3:51
+OK, there we go.
+
+3:52
+So we have our fifty titles and we have our 10 best here.
+
+3:58
+And it explains why ask AT&T thinks these are the best.
+
+4:04
+But let's go ahead and take this a step further this time.
+
+4:07
+Now that we've got these best titles, it's like, oh man, I really, really like this one 5G revolution transforming higher education.
+
+4:15
+So I'm going to go ahead and copy that one, and I'm going to give another prompt.
+
+4:21
+I really like this one, and I'm going to paste it in there.
+
+4:28
+And then I'm going to go ahead and just continue the prompt.
+
+4:32
+Make 10 variations on this one.
+
+4:38
+Be provocative and risky.
+
+4:45
+Make it very eye-catching.
+
+4:50
+So again, ASK ATT is a robust tool.
+
+4:55
+Let's go ahead and submit that so you can push it, right.
+
+4:58
+This is the beauty of brainstorming with ASK.
+
+5:00
+ATT is a brainstorming partner.
+
+5:03
+You can push it to be wild or to try to do something that's really going to help you stand out in that conference brochure.
+
+5:11
+And this is where word choices really come in.
+
+5:13
+You don't have to use any of them.
+
+5:15
+And so now you can see we've got these variations of that particular title igniting the higher education explosion.
+
+5:23
+Probably not a good one.
+
+5:25
+Higher education's ultimate makeover, right?
+
+5:27
+Get a little bit of reality TV in there.
+
+5:29
+Regardless, it lets you have options to pick from, and so you can bring your best judgment to this very helpful brainstorming tool.
+
+5:39
+So let's think about it.
+
+5:40
+How could you use this technique?
+
+5:42
+Well, you can use it with just about anything.
+
+5:44
+You can use it with product names.
+
+5:46
+You can use it with e-mail headlines, right?
+
+5:49
+You can use it with just about anything that you want, and you're using this technique where you give it a big number to go for it, then to narrow it down, and then you can just continue to create variations with direction from that narrowed list.
+
+6:05
+So if you find a prompt that works really well for brainstorming or anything else, share it down below or fill out one of our forms for our prompt Hall of Fame until the next video.
+
+6:18
+Keep it up and happy prompting.

@@ -1,0 +1,109 @@
+﻿CoPilot Studio Demo Jan 25
+
+0:00
+Here's a real quick demo of Copilot Studio.
+
+0:03
+Copilot Studio is one of the tools that we're really excited about for business that should be coming in the next couple quarters.
+
+0:11
+So basically it lets you create a bunch of easy AI tools based on simple templates.
+
+0:18
+So if you think of all of the power platforms of power, Automate, prompt flow, things like that, Copilot Studio is a part of that.
+
+0:26
+So I'm just going to do a quick little demo.
+
+0:28
+This is the AI Insights page.
+
+0:30
+It's probably where you're watching this video.
+
+0:32
+It has a bunch of information about prompting an AI, but instead of clicking around, what if we could just add a chat bot?
+
+0:41
+So that's what I'm going to do.
+
+0:42
+I'm going to pick this template website QA, and it loads with some simple stuff.
+
+0:47
+I'm just going to call it my demo copilot.
+
+0:51
+We could update the descriptions, we could update the instructions, but just doing a fast demo here.
+
+0:56
+And then for knowledge, I'm going to add knowledge.
+
+0:59
+The knowledge I'm going to use is a SharePoint.
+
+1:02
+I'm going to put in the AI Insights URL.
+
+1:06
+There it is.
+
+1:07
+I hit add.
+
+1:08
+I hit add.
+
+1:09
+I'm going to remove the outside knowledge and I'm going to hit create and it is that simple to get the first version out the door.
+
+1:20
+Now there's a few more steps, but for the most part that's it.
+
+1:27
+We can tune this more.
+
+1:28
+This is obviously a really quick demo to get to a first draft.
+
+1:31
+One thing I'm going to turn off this enabled so it will not use any internal knowledge.
+
+1:37
+It'll only use the knowledge from the SharePoint, not from the model.
+
+1:42
+And that is it.
+
+1:44
+By the way, no editing, no nothing on this.
+
+1:46
+So this is in real time.
+
+1:48
+What are some ways I can get better at prompting?
+
+1:54
+So again, instead of clicking around the website, I can do some stuff with an actual chat bot.
+
+2:00
+I could obviously make all sorts of other triggers.
+
+2:02
+I could do all sorts of other things, and this is an incredibly powerful tool.
+
+2:07
+But here it is.
+
+2:09
+Here is an answer and it gives a reference and that takes us back to the page where it found the information.
+
+2:18
+So there you go, a really quick demo of Copilot Studio, one of the tools that we are really excited about.
+
+2:24
+It's a easy way to build agents and chat bots and really just tackle a lot of the use cases that we all need for productivity.
+
+2:35
+And also just a a great way to to get some stuff done so that we can use AI in our everyday workflows.
