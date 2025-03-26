@@ -17,7 +17,7 @@
       </o:OfficeDocumentSettings>
     </xml>
     <style type="text/css">
-        table {border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
+        table {border-collapse: collapse;}
         td,th {mso-line-height-rule: exactly;}
         body,table,td,p,a {font-family: Arial, Helvetica, sans-serif !important;}
         .ExternalClass * {line-height: 100%}
@@ -34,6 +34,11 @@
         p, h1, h3 {line-height: 1.6;}
         img {-ms-interpolation-mode: bicubic; display: block;}
         
+        /* Fix for Outlook spacing */
+        table {
+            border-collapse: collapse;
+        }
+        
         /* Non-Outlook border-radius styles */
         .rounded-table {border-radius: 12px; overflow: hidden;}
         .rounded-image {border-radius: 8px; overflow: hidden;}
@@ -47,12 +52,6 @@
         @media (prefers-color-scheme: dark) {
             body {background-color: #1e1e1e;}
             .dark-mode-text {color: #e6e6e6;}
-        }
-        
-        /* Outlook spacing fixes */
-        .outlook-table-fix {
-            mso-table-lspace: 0pt; 
-            mso-table-rspace: 0pt;
         }
         
         /* Fix for Outlook image distortion */
@@ -169,14 +168,14 @@
                     <tr>
                         <td style="padding: 0 50px 0 50px;">
                             <!--[if mso]>
-                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #333333;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; background-color: #333333;">
                             <![endif]-->
                             <!--[if !mso]><!-->
-                            <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-box" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #333333;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-box" style="border-collapse: collapse; width: 640px; background-color: #333333;">
                             <!--<![endif]-->
                                 <tr>
                                     <td style="padding: 15px 20px; width: 640px;">
-                                        <table border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; width: 600px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; width: 600px;">
                                             <tr>
                                                 <td width="30" valign="top" style="width: 30px; padding-right: 10px;">
                                                     <!-- Smart helper icon with link -->
@@ -214,7 +213,7 @@
                             <p style="font-size: 16px; color: #e6e6e6; margin-top: 0; margin-bottom: 15px; line-height: 1.7; font-family: Arial, Helvetica, sans-serif;">Hi there,</p>
                             
                             <!-- Video Placeholder with Play Button -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin-bottom: 35px; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin-bottom: 35px; width: 640px;">
                                 <tr>
                                     <td style="padding: 0; width: 640px;">
                                         <p style="font-size: 18px; color: #e6e6e6; margin-bottom: 20px; line-height: 1.7; font-family: Arial, Helvetica, sans-serif;">
@@ -222,7 +221,7 @@
                                         </p>
                                         
                                         <!-- Video placeholder with play button -->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: 25px;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; margin-bottom: 25px;">
                                             <tr>
                                                 <td align="center" style="padding: 0;">
                                                     <!-- Clickable video thumbnail for all clients -->
@@ -277,17 +276,17 @@
                                         </table>
                                         
                                         <!--[if mso]>
-                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #3a3a3a;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px;">
                                         <![endif]-->
                                         <!--[if !mso]><!-->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-box" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #3a3a3a;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-box" style="border-collapse: collapse; width: 640px; background-color: #3a3a3a;">
                                         <!--<![endif]-->
                                             <tr>
                                                 <td style="padding: 25px;">
                                                     <h3 style="color: #0057b8; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">The Magic Transformation:</h3>
                                                     
                                                     <!-- Bulletproof unordered list for Outlook -->
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="590" style="border-collapse: collapse; width: 590px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="590" style="border-collapse: collapse; width: 590px;">
                                                         <tr>
                                                             <td width="20" valign="top" style="font-family: Arial, Helvetica, sans-serif; color: #e6e6e6; width: 20px;">•</td>
                                                             <td style="padding-bottom: 10px; font-family: Arial, Helvetica, sans-serif; color: #e6e6e6; font-size: 16px; width: 570px;">
@@ -321,16 +320,16 @@
                             </table>
                             
                             <!-- The Secret Sauce -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin-bottom: 35px; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin-bottom: 35px; width: 640px;">
                                 <tr>
                                     <td style="padding: 0; width: 640px;">
                                         <h3 style="color: #0057b8; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">✨ The Secret Sauce:</h3>
                                         
                                         <!--[if mso]>
-                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #3a3a3a;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px;">
                                         <![endif]-->
                                         <!--[if !mso]><!-->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-box" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #3a3a3a;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-box" style="border-collapse: collapse; width: 640px; background-color: #3a3a3a;">
                                         <!--<![endif]-->
                                             <tr>
                                                 <td style="padding: 25px;">
@@ -339,7 +338,7 @@
                                                     </p>
                                                     
                                                     <!-- Bulletproof unordered list for Outlook -->
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="590" style="border-collapse: collapse; width: 590px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="590" style="border-collapse: collapse; width: 590px;">
                                                         <tr>
                                                             <td width="20" valign="top" style="font-family: Arial, Helvetica, sans-serif; color: #e6e6e6; width: 20px;">•</td>
                                                             <td style="padding-bottom: 10px; font-family: Arial, Helvetica, sans-serif; color: #e6e6e6; font-size: 16px; width: 570px;">
@@ -373,21 +372,21 @@
                             </table>
                             
                             <!-- 60-Second Challenge -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin-bottom: 35px; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin-bottom: 35px; width: 640px;">
                                 <tr>
                                     <td style="padding: 0; width: 640px;">
                                         <h3 style="color: #0057b8; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">Your 60-Second Presentation Challenge:</h3>
                                         
                                         <!--[if mso]>
-                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #3a3a3a;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px;">
                                         <![endif]-->
                                         <!--[if !mso]><!-->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-box" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #3a3a3a;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-box" style="border-collapse: collapse; width: 640px; background-color: #3a3a3a;">
                                         <!--<![endif]-->
                                             <tr>
                                                 <td style="padding: 25px;">
                                                     <!-- Numbered list for Outlook -->
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="590" style="border-collapse: collapse; width: 590px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="590" style="border-collapse: collapse; width: 590px;">
                                                         <tr>
                                                             <td width="30" valign="top" style="font-family: Arial, Helvetica, sans-serif; color: #e6e6e6; width: 30px;">1.</td>
                                                             <td style="padding-bottom: 10px; font-family: Arial, Helvetica, sans-serif; color: #e6e6e6; font-size: 16px; width: 560px;">
@@ -415,16 +414,16 @@
                             </table>
                             
                             <!-- Pro Tips -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin-bottom: 35px; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin-bottom: 35px; width: 640px;">
                                 <tr>
                                     <td style="padding: 0; width: 640px;">
                                         <h3 style="color: #0057b8; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">Pro Tips:</h3>
                                         
                                         <!--[if mso]>
-                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px;">
                                         <![endif]-->
                                         <!--[if !mso]><!-->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px;">
                                         <!--<![endif]-->
                                             <tr>
                                                 <td width="313" valign="top">
@@ -601,10 +600,10 @@
                             </table>
                             
                             <!-- Final Call to Action With Image -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: 30px; background-color: #333333;" class="rounded-box">
+                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; margin-bottom: 30px; background-color: #333333;" class="rounded-box">
                                 <tr>
                                     <td style="padding: 25px; width: 640px;">
-                                        <table border="0" cellpadding="0" cellspacing="0" width="590" style="border-collapse: collapse; width: 590px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="590" style="border-collapse: collapse; width: 590px;">
                                             <tr>
                                                 <td width="180" valign="middle" style="padding-right: 20px;">
                                                     <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=180&q=80" 
@@ -635,7 +634,7 @@
                     <tr>
                         <td align="center" style="padding: 0 50px 45px 50px;">
                             <!-- Divider that works in Outlook -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin-bottom: 30px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; margin-bottom: 30px;">
                                 <tr>
                                     <td height="1" bgcolor="#444444" style="font-size: 0; line-height: 0; height: 1px; width: 640px;">&nbsp;</td>
                                 </tr>
@@ -643,7 +642,7 @@
                             
                             <!-- Outlook VML button -->
                             <!--[if mso]>
-                            <table border="0" cellpadding="0" cellspacing="0" align="center" width="280" style="border-collapse: collapse; width: 280px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <table border="0" cellpadding="0" cellspacing="0" align="center" width="280" style="border-collapse: collapse; width: 280px;">
                                 <tr>
                                     <td align="center">
                                         <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://att.****/sites/ai-insights" style="height:50px;v-text-anchor:middle;width:280px;" arcsize="50%" stroke="f" fillcolor="#0057b8">
@@ -676,7 +675,7 @@
                     <!-- Footer -->
                     <tr>
                         <td bgcolor="#222222" style="padding: 25px; text-align: center; border-top: 1px solid #444444; width: 640px;">
-                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px;">
                                 <tr>
                                     <td align="center" style="width: 640px;">
                                         <p style="margin: 0 0 10px 0; font-size: 14px; color: #888888; font-family: Arial, Helvetica, sans-serif;">Best regards,<br />The Ask AT&amp;T Team</p>
