@@ -39,11 +39,10 @@
         .card {
             background-color: #ffffff;
             border: 1px solid #e0e0e0;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-radius: 12px; /* Applied to non-MSO table */
+            overflow: hidden; /* Applied to non-MSO table */
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* Applied to non-MSO table */
             transition: all 0.3s ease;
-            cursor: pointer;
         }
         .card:hover {
             transform: translateY(-2px);
@@ -52,7 +51,6 @@
         }
         .text-center {text-align: center;}
         .text-primary {color: #00A8E0;}
-        .font-lalezar {font-family: 'Lalezar', Arial, Helvetica, sans-serif !important;}
         
         /* Non-Outlook styles */
         .rounded-table {
@@ -68,9 +66,8 @@
         .rounded-box {
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Applied to non-MSO table */
             transition: all 0.3s ease;
-            cursor: pointer;
         }
         .rounded-box:hover {
             transform: translateY(-2px);
@@ -112,7 +109,7 @@
         }
         
         /* Font imports */
-        @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap'); Font removed */
         
         /* Global font styles */
         body, table, td, p, a, li, blockquote, h1, h2, h3, h4, h5, h6 {
@@ -141,54 +138,71 @@
                 <!--<![endif]-->
                     <!-- Header as a card -->
                     <tr>
-                        <!-- Add border for MSO -->
-                        <!--[if mso]>
-                        <td style="padding: 20px 30px; background-color: #ffffff; border: 1px solid #00A8E0;">
-                        <![endif]-->
-                        <!-- Add border-radius for non-MSO -->
-                        <!--[if !mso]><!-->
-                        <td style="padding: 40px 40px; background-color: #f5f5f5;">
-                        <!--<![endif]-->
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
-                                <!-- Row for Heading and Logo -->
+                        <!-- New Parent TD for Outer Padding -->
+                        <td style="padding: 40px 50px 20px 50px;">
+                            <!-- Inner TD for Background/Border -->
+                            <!--[if mso]>
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
-                                    <!-- Left Column: Heading -->
-                                    <td width="70%" valign="middle" align="left" style="padding-right: 30px;">
-                                        <h1 style="color: #333333; margin: 0; font-size: 50px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; line-height: 50px; letter-spacing: -1px;"><span style="color: #00A8E0;">Transform Your<br> Work with</span><br>Ask AT&amp;T</h1>
-                                    </td>
-                                    <!-- Right Column: Logo -->
-                                    <td width="30%" valign="middle" align="right">
-                                        <!-- AT&T Logo (Increased Size) -->
-                                        <!--[if mso]>
-                                        <table border="0" cellpadding="0" cellspacing="0" align="right">
-                                            <tr>
-                                                <td style="width: 146px; height: 146px;">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
-                                                         alt="AT&T Logo" 
-                                                         width="200" 
-                                                         height="200" 
-                                                         style="width: 200px; height: 200px; display: block; border: 0; -ms-interpolation-mode: bicubic;" />
-                                                </td>
-                                            </tr>
-                                        </table>
-                                        <![endif]-->
-                                        <!-- Fallback for non-Outlook clients -->
-                                        <!--[if !mso]><!-->
-                                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
-                                             alt="AT&T Logo" 
-                                             width="200" 
-                                             height="200" 
-                                             style="display: block; border: 0; width: 200px; height: 200px;" />
-                                        <!--<![endif]-->
-                                    </td>
-                                </tr>
-                                <!-- Row for Subheading -->
-                                <tr>
-                                    <td colspan="2" align="center" style="padding-top: 15px;">
-                                        <p style="color: #666666; margin: 0; font-size: 18px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; line-height: 24px;"><span style="color: #00A8E0;">Your AI Superpower</span></p>
+                                    <td style="background-color: #ffffff; border: 1px solid #00A8E0;">
+                            <![endif]-->
+                            <!--[if !mso]><!-->
+                            <div style="background-color: #ffffff; border: 1px solid #00A8E0; border-radius: 12px;">
+                            <!--<![endif]-->
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                    <tr>
+                                        <td style="padding: 20px;"> <!-- Padding applied inside the border -->
+                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                                <!-- Row for Heading and Logo -->
+                                                <tr>
+                                                    <!-- Left Column: Heading -->
+                                                    <td width="70%" valign="middle" align="left" style="padding-right: 30px;">
+                                                        <h1 style="color: #333333; margin: 0; font-size: 50px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; line-height: 50px; letter-spacing: -1px;"><span style="color: #00A8E0;">Transform Your<br> Work with</span><br>Ask AT&amp;T</h1>
+                                                    </td>
+                                                    <!-- Right Column: Logo -->
+                                                    <td width="30%" valign="middle" align="right">
+                                                        <!-- AT&T Logo (Increased Size) -->
+                                                        <!--[if mso]>
+                                                        <table border="0" cellpadding="0" cellspacing="0" align="right">
+                                                            <tr>
+                                                                <td style="width: 146px; height: 146px;">
+                                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
+                                                                         alt="AT&T Logo" 
+                                                                         width="200" 
+                                                                         height="200" 
+                                                                         style="width: 200px; height: 200px; display: block; border: 0; -ms-interpolation-mode: bicubic;" />
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                        <![endif]-->
+                                                        <!-- Fallback for non-Outlook clients -->
+                                                        <!--[if !mso]><!-->
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
+                                                             alt="AT&T Logo" 
+                                                             width="200" 
+                                                             height="200" 
+                                                             style="display: block; border: 0; width: 200px; height: 200px;" />
+                                                        <!--<![endif]-->
+                                                    </td>
+                                                </tr>
+                                                <!-- Row for Subheading -->
+                                                <tr>
+                                                    <td colspan="2" align="center" style="padding-top: 15px;">
+                                                        <p style="color: #666666; margin: 0; font-size: 18px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; line-height: 24px;"><span style="color: #00A8E0;">Your AI Superpower</span></p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                            <!--[if mso]>
                                     </td>
                                 </tr>
                             </table>
+                            <![endif]-->
+                            <!--[if !mso]><!-->
+                            </div>
+                            <!--<![endif]-->
                         </td>
                     </tr>
                     
