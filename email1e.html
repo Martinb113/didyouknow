@@ -25,6 +25,12 @@
             mso-border-alt: none;
         }
         img {-ms-interpolation-mode: bicubic !important; display: block !important;}
+        /* Fix for Outlook text blurriness */
+        * {text-rendering: optimizeLegibility !important;}
+        /* Fix for Outlook link colors */
+        a:link, a:visited {color: #00A8E0 !important;}
+        /* Fix for Outlook table spacing */
+        table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
     </style>
     <![endif]-->
 
@@ -118,6 +124,15 @@
         body, table, td, p, a, li, blockquote, h1, h2, h3, h4, h5, h6 {
             font-family: 'Lalezar', Arial, Helvetica, sans-serif !important;
         }
+
+        /* Fix for Firefox link issues */
+        a {
+            text-decoration: none;
+            color: #00A8E0;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body style="margin: 0; padding: 0; background-color: #F5F5F5; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
@@ -148,7 +163,7 @@
                             <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
                             <![endif]-->
                             
-                            <!-- AT&T Logo -->
+                            <!-- AT&T Logo with proper link handling -->
                             <!--[if mso]>
                             <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
                                 <tr>
@@ -156,11 +171,13 @@
                                         <table border="0" cellpadding="0" cellspacing="0" align="center">
                                             <tr>
                                                 <td style="width: 80px; height: 80px;">
-                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
-                                                         alt="AT&T Logo" 
-                                                         width="80" 
-                                                         height="80" 
-                                                         style="width: 80px; height: 80px; display: block; border: 0; -ms-interpolation-mode: bicubic;" />
+                                                    <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
+                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
+                                                             alt="AT&T Logo" 
+                                                             width="80" 
+                                                             height="80" 
+                                                             style="width: 80px; height: 80px; display: block; border: 0; -ms-interpolation-mode: bicubic;" />
+                                                    </a>
                                                 </td>
                                             </tr>
                                         </table>
@@ -171,11 +188,13 @@
                             
                             <!-- Fallback for non-Outlook clients -->
                             <!--[if !mso]><!-->
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
-                                 alt="AT&T Logo" 
-                                 width="80" 
-                                 height="80" 
-                                 style="display: block; margin: 0 auto 25px auto; border: 0; width: 80px; height: 80px;" />
+                            <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
+                                     alt="AT&T Logo" 
+                                     width="80" 
+                                     height="80" 
+                                     style="display: block; margin: 0 auto 25px auto; border: 0; width: 80px; height: 80px;" />
+                            </a>
                             <!--<![endif]-->
 
                             <h1 style="color: #333333; margin: 0; font-size: 32px; font-weight: bold; font-family: 'Lalezar', Arial, Helvetica, sans-serif; line-height: 36px; letter-spacing: -0.5px;">Transform Your Work with <span style="color: #00A8E0;">Ask AT&amp;T</span></h1>
@@ -188,7 +207,7 @@
                         </td>
                     </tr>
                     
-                    <!-- Outlook Version Notification -->
+                    <!-- Outlook Version Notification with improved link handling -->
                     <tr>
                         <td style="padding: 0 50px 0 50px;">
                             <!--[if mso]>
@@ -202,22 +221,24 @@
                                         <table border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; width: 600px;">
                                             <tr>
                                                 <td width="30" valign="top" style="width: 30px; padding-right: 10px;">
-                                                    <!-- Smart helper icon with link -->
-                                                    <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
+                                                    <!-- Smart helper icon with improved link handling -->
                                                     <!--[if mso]>
-                                                    <img src="https://img.icons8.com/fluency/96/000000/chatbot.png" 
-                                                         alt="Smart AI Helper" width="20" height="20" 
-                                                         style="display: block; border: 0; width: 20px; height: 20px;" />
+                                                    <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
+                                                        <img src="https://img.icons8.com/fluency/96/000000/chatbot.png" 
+                                                             alt="Smart AI Helper" width="20" height="20" 
+                                                             style="display: block; border: 0; width: 20px; height: 20px;" />
+                                                    </a>
                                                     <![endif]-->
                                                     <!--[if !mso]><!-->
-                                                    <img src="https://img.icons8.com/fluency/96/000000/chatbot.png" 
-                                                         alt="Smart AI Helper" width="20" height="20" 
-                                                         class="rounded-image" style="display: block; border: 0; width: 20px; height: 20px;" />
-                                                    <!--<![endif]-->
+                                                    <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
+                                                        <img src="https://img.icons8.com/fluency/96/000000/chatbot.png" 
+                                                             alt="Smart AI Helper" width="20" height="20" 
+                                                             class="rounded-image" style="display: block; border: 0; width: 20px; height: 20px;" />
                                                     </a>
+                                                    <!--<![endif]-->
                                                 </td>
                                                 <td style="font-family: Arial, Helvetica, sans-serif; color: #666666; font-size: 14px; line-height: 1.5;">
-                                                    <!-- Make text clickable -->
+                                                    <!-- Make text clickable with proper styling -->
                                                     <a href="https://att.****/sites/ai-insights" style="text-decoration: none; color: #666666;">
                                                         <p style="margin: 0; color: #666666;">For the best viewing experience, please ensure you're using the latest version of Outlook or click to view in browser.</p>
                                                     </a>
@@ -524,17 +545,17 @@
                         </td>
                     </tr>
                     
-                    <!-- CTA Button -->
+                    <!-- CTA Button with improved Outlook compatibility -->
                     <tr>
                         <td align="center" style="padding: 0 50px 45px 50px;">
-                            <!-- Outlook VML button -->
+                            <!-- Outlook VML button with improved compatibility -->
                             <!--[if mso]>
                             <table border="0" cellpadding="0" cellspacing="0" align="center" width="280" style="border-collapse: collapse; width: 280px;">
                                 <tr>
                                     <td align="center">
                                         <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://att.****/sites/ai-insights" style="height:50px;v-text-anchor:middle;width:280px;" arcsize="50%" stroke="f" fillcolor="#00A8E0">
                                             <w:anchorlock/>
-                                            <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">TRY ASK AT&amp;T NOW</center>
+                                            <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;">TRY ASK AT&amp;T NOW</center>
                                         </v:roundrect>
                                     </td>
                                 </tr>
@@ -554,7 +575,7 @@
                         </td>
                     </tr>
                     
-                    <!-- Footer -->
+                    <!-- Footer with improved Outlook compatibility -->
                     <tr>
                         <td bgcolor="#ffffff" style="padding: 25px; text-align: center; border-top: 1px solid #e0e0e0; width: 640px;">
                             <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px;">
