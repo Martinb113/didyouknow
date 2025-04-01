@@ -25,12 +25,6 @@
             mso-border-alt: none;
         }
         img {-ms-interpolation-mode: bicubic !important; display: block !important;}
-        /* Fix for Outlook text blurriness */
-        * {text-rendering: optimizeLegibility !important;}
-        /* Fix for Outlook link colors */
-        a:link, a:visited {color: #00A8E0 !important;}
-        /* Fix for Outlook table spacing */
-        table {mso-table-lspace: 0pt; mso-table-rspace: 0pt;}
     </style>
     <![endif]-->
 
@@ -124,15 +118,6 @@
         body, table, td, p, a, li, blockquote, h1, h2, h3, h4, h5, h6 {
             font-family: 'Lalezar', Arial, Helvetica, sans-serif !important;
         }
-
-        /* Fix for Firefox link issues */
-        a {
-            text-decoration: none;
-            color: #00A8E0;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
     </style>
 </head>
 <body style="margin: 0; padding: 0; background-color: #F5F5F5; min-width: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;">
@@ -163,7 +148,7 @@
                             <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
                             <![endif]-->
                             
-                            <!-- AT&T Logo with proper link handling -->
+                            <!-- AT&T Logo -->
                             <!--[if mso]>
                             <table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
                                 <tr>
@@ -171,13 +156,11 @@
                                         <table border="0" cellpadding="0" cellspacing="0" align="center">
                                             <tr>
                                                 <td style="width: 80px; height: 80px;">
-                                                    <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
-                                                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
-                                                             alt="AT&T Logo" 
-                                                             width="80" 
-                                                             height="80" 
-                                                             style="width: 80px; height: 80px; display: block; border: 0; -ms-interpolation-mode: bicubic;" />
-                                                    </a>
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
+                                                         alt="AT&T Logo" 
+                                                         width="80" 
+                                                         height="80" 
+                                                         style="width: 80px; height: 80px; display: block; border: 0; -ms-interpolation-mode: bicubic;" />
                                                 </td>
                                             </tr>
                                         </table>
@@ -188,17 +171,15 @@
                             
                             <!-- Fallback for non-Outlook clients -->
                             <!--[if !mso]><!-->
-                            <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
-                                     alt="AT&T Logo" 
-                                     width="80" 
-                                     height="80" 
-                                     style="display: block; margin: 0 auto 25px auto; border: 0; width: 80px; height: 80px;" />
-                            </a>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/AT%26T_logo_2016.svg" 
+                                 alt="AT&T Logo" 
+                                 width="80" 
+                                 height="80" 
+                                 style="display: block; margin: 0 auto 25px auto; border: 0; width: 80px; height: 80px;" />
                             <!--<![endif]-->
 
-                            <h1 style="color: #333333; margin: 0; font-size: 32px; font-weight: bold; font-family: 'Lalezar', Arial, Helvetica, sans-serif; line-height: 36px; letter-spacing: -0.5px;">Transform Your Work with <span style="color: #00A8E0;">Ask AT&amp;T</span></h1>
-                            <p style="color: #666666; margin: 12px 0 0 0; font-size: 18px; font-weight: bold; font-family: 'Lalezar', Arial, Helvetica, sans-serif; line-height: 24px;"><span style="color: #00A8E0;">Your AI Superpower</span></p>
+                            <h1 style="color: #333333; margin: 0; font-size: 32px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; line-height: 36px; letter-spacing: -0.5px;">Transform Your Work with <span style="color: #00A8E0;">Ask AT&amp;T</span></h1>
+                            <p style="color: #666666; margin: 12px 0 0 0; font-size: 18px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; line-height: 24px;"><span style="color: #00A8E0;">Your AI Superpower</span></p>
                             
                             <!--[if gte mso 9]>
                             </v:textbox>
@@ -207,7 +188,7 @@
                         </td>
                     </tr>
                     
-                    <!-- Outlook Version Notification with improved link handling -->
+                    <!-- Outlook Version Notification -->
                     <tr>
                         <td style="padding: 0 50px 0 50px;">
                             <!--[if mso]>
@@ -221,24 +202,22 @@
                                         <table border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; width: 600px;">
                                             <tr>
                                                 <td width="30" valign="top" style="width: 30px; padding-right: 10px;">
-                                                    <!-- Smart helper icon with improved link handling -->
-                                                    <!--[if mso]>
+                                                    <!-- Smart helper icon with link -->
                                                     <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
-                                                        <img src="https://img.icons8.com/fluency/96/000000/chatbot.png" 
-                                                             alt="Smart AI Helper" width="20" height="20" 
-                                                             style="display: block; border: 0; width: 20px; height: 20px;" />
-                                                    </a>
+                                                    <!--[if mso]>
+                                                    <img src="https://img.icons8.com/fluency/96/000000/chatbot.png" 
+                                                         alt="Smart AI Helper" width="20" height="20" 
+                                                         style="display: block; border: 0; width: 20px; height: 20px;" />
                                                     <![endif]-->
                                                     <!--[if !mso]><!-->
-                                                    <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
-                                                        <img src="https://img.icons8.com/fluency/96/000000/chatbot.png" 
-                                                             alt="Smart AI Helper" width="20" height="20" 
-                                                             class="rounded-image" style="display: block; border: 0; width: 20px; height: 20px;" />
-                                                    </a>
+                                                    <img src="https://img.icons8.com/fluency/96/000000/chatbot.png" 
+                                                         alt="Smart AI Helper" width="20" height="20" 
+                                                         class="rounded-image" style="display: block; border: 0; width: 20px; height: 20px;" />
                                                     <!--<![endif]-->
+                                                    </a>
                                                 </td>
                                                 <td style="font-family: Arial, Helvetica, sans-serif; color: #666666; font-size: 14px; line-height: 1.5;">
-                                                    <!-- Make text clickable with proper styling -->
+                                                    <!-- Make text clickable -->
                                                     <a href="https://att.****/sites/ai-insights" style="text-decoration: none; color: #666666;">
                                                         <p style="margin: 0; color: #666666;">For the best viewing experience, please ensure you're using the latest version of Outlook or click to view in browser.</p>
                                                     </a>
@@ -256,7 +235,7 @@
                         <td style="padding: 45px 50px 30px 50px; font-family: Arial, Helvetica, sans-serif; color: #333333;">
                             <!-- Introduction -->
                             <p style="font-size: 16px; color: #333333; margin-top: 0; margin-bottom: 15px; line-height: 1.7; font-family: Arial, Helvetica, sans-serif;">Hi there,</p>
-                            <p style="font-size: 18px; color: #333333; margin-bottom: 30px; line-height: 1.7; font-family: 'Lalezar', Arial, Helvetica, sans-serif;">&#128640; <strong style="color: #00A8E0;">Meet Ask AT&amp;T</strong> – your AI-powered assistant that doesn't just search for answers… it <strong style="color: #00A8E0;">creates them!</strong></p>
+                            <p style="font-size: 18px; color: #333333; margin-bottom: 30px; line-height: 1.7; font-family: Arial, Helvetica, sans-serif;">&#128640; <strong style="color: #00A8E0;">Meet Ask AT&amp;T</strong> – your AI-powered assistant that doesn't just search for answers… it <strong style="color: #00A8E0;">creates them!</strong></p>
                             
                             <!-- Imagine This Example -->
                             <table border="0" cellpadding="0" cellspacing="0" width="640" class="container" style="margin-bottom: 35px;">
@@ -301,7 +280,7 @@
                                                         You're drowning in messy PDF tables, scrambling to extract numbers into Excel. One simple command to <strong class="text-primary">Ask AT&amp;T</strong>, and in seconds, it converts everything into a clean CSV—like magic!
                                                     </p>
                                                     <!-- Add visual indicator for clickable -->
-                                                    <p style="font-size: 14px; line-height: 1.7; margin: 8px 0 0 0; color: #00A8E0; font-family: 'Lalezar', Arial, Helvetica, sans-serif;">
+                                                    <p style="font-size: 14px; line-height: 1.7; margin: 8px 0 0 0; color: #00A8E0; font-family: Arial, Helvetica, sans-serif;">
                                                         Learn more → <span style="color: #666666; font-size: 12px;">(Click to explore)</span>
                                                     </p>
                                                 </td>
@@ -315,7 +294,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin-bottom: 35px; width: 640px;">
                                 <tr>
                                     <td style="padding: 0; width: 640px;">
-                                        <h3 style="color: #00A8E0; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: 'Lalezar', Arial, Helvetica, sans-serif; line-height: 24px;">&#129327; But that's just the beginning...</h3>
+                                        <h3 style="color: #00A8E0; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">&#129327; But that's just the beginning...</h3>
                                         
                                         <!--[if mso]>
                                         <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px;">
@@ -346,7 +325,7 @@
                                                                 </a>
                                                                      
                                                                 <div style="height: 80px; display: flex; align-items: center;">
-                                                                    <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #333333; font-family: 'Lalezar', Arial, Helvetica, sans-serif;">
+                                                                    <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #333333; font-family: Arial, Helvetica, sans-serif;">
                                                                         <strong style="color: #333333;">Need to explain quantum physics in a rap battle style?</strong> 
                                                                         <span style="color: #00A8E0; font-weight: bold;">Done.</span>
                                                                     </p>
@@ -386,7 +365,7 @@
                                                                 </a>
                                                                 
                                                                 <div style="height: 80px; display: flex; align-items: center;">
-                                                                    <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #333333; font-family: 'Lalezar', Arial, Helvetica, sans-serif;">
+                                                                    <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #333333; font-family: Arial, Helvetica, sans-serif;">
                                                                         <strong style="color: #333333;">Want a business summary as a Shakespearean monologue?</strong> 
                                                                         <span style="color: #00A8E0; font-weight: bold;">No problem.</span>
                                                                     </p>
@@ -420,7 +399,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin: 30px 0; width: 640px;">
                                 <tr>
                                     <td style="padding: 0; width: 640px;">
-                                        <h3 style="color: #00A8E0; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: 'Lalezar', Arial, Helvetica, sans-serif; line-height: 24px;">&#128161; The secret to unlocking this power?</h3>
+                                        <h3 style="color: #00A8E0; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">&#128161; The secret to unlocking this power?</h3>
                                         
                                         <!--[if mso]>
                                         <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px; cursor: pointer; background-color: #ffffff; border: 1px solid #e0e0e0; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
@@ -447,11 +426,11 @@
                                                                 </td>
                                                                 <td width="32" style="font-size: 0; line-height: 0; width: 32px;">&nbsp;</td>
                                                                 <td width="376" valign="middle">
-                                                                    <p style="font-size: 16px; line-height: 1.7; margin: 0; color: #333333; font-family: 'Lalezar', Arial, Helvetica, sans-serif;">
+                                                                    <p style="font-size: 16px; line-height: 1.7; margin: 0; color: #333333; font-family: Arial, Helvetica, sans-serif;">
                                                                         <strong style="color: #00A8E0;">Prompt engineering!</strong> It's how you <strong style="color: #00A8E0;">train AI</strong> to give you exactly what you need—<strong style="color: #00A8E0;">faster, smarter, better.</strong>
                                                                     </p>
                                                                     <!-- Add visual indicator for clickable -->
-                                                                    <p style="font-size: 14px; line-height: 1.7; margin: 8px 0 0 0; color: #00A8E0; font-family: 'Lalezar', Arial, Helvetica, sans-serif;">
+                                                                    <p style="font-size: 14px; line-height: 1.7; margin: 8px 0 0 0; color: #00A8E0; font-family: Arial, Helvetica, sans-serif;">
                                                                         Learn more → <span style="color: #666666; font-size: 12px;">(Click to explore)</span>
                                                                     </p>
                                                                 </td>
@@ -476,7 +455,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin: 30px 0; width: 640px;">
                                 <tr>
                                     <td style="padding: 0; width: 640px;">
-                                        <h3 style="color: #00A8E0; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: 'Lalezar', Arial, Helvetica, sans-serif; line-height: 24px;">&#9888;&#65039; Quick Reality Check:</h3>
+                                        <h3 style="color: #00A8E0; font-size: 20px; margin: 0 0 15px 0; font-weight: 600; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">&#9888;&#65039; Quick Reality Check:</h3>
                                         
                                         <!-- Reality check box -->
                                         <!--[if mso]>
@@ -536,7 +515,7 @@
                                              class="rounded-image" style="display: block; margin-bottom: 15px; border: 0; width: 320px; height: 213px;" />
                                         <!--<![endif]-->
                                         
-                                        <p style="font-size: 20px; font-weight: bold; color: #333333; margin: 0; font-family: 'Lalezar', Arial, Helvetica, sans-serif; line-height: 24px;">
+                                        <p style="font-size: 20px; font-weight: bold; color: #333333; margin: 0; font-family: Arial, Helvetica, sans-serif; line-height: 24px;">
                                             <strong style="color: #00A8E0;">Ready to level up?</strong> Start asking. Start winning.
                                         </p>
                                     </td>
@@ -545,17 +524,17 @@
                         </td>
                     </tr>
                     
-                    <!-- CTA Button with improved Outlook compatibility -->
+                    <!-- CTA Button -->
                     <tr>
                         <td align="center" style="padding: 0 50px 45px 50px;">
-                            <!-- Outlook VML button with improved compatibility -->
+                            <!-- Outlook VML button -->
                             <!--[if mso]>
                             <table border="0" cellpadding="0" cellspacing="0" align="center" width="280" style="border-collapse: collapse; width: 280px;">
                                 <tr>
                                     <td align="center">
                                         <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://att.****/sites/ai-insights" style="height:50px;v-text-anchor:middle;width:280px;" arcsize="50%" stroke="f" fillcolor="#00A8E0">
                                             <w:anchorlock/>
-                                            <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;text-decoration:none;">TRY ASK AT&amp;T NOW</center>
+                                            <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">TRY ASK AT&amp;T NOW</center>
                                         </v:roundrect>
                                     </td>
                                 </tr>
@@ -567,7 +546,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 280px;">
                                 <tr>
                                     <td align="center" bgcolor="#00A8E0" class="rounded-button shadow" style="padding: 16px 30px;">
-                                        <a href="https://att.****/sites/ai-insights" style="display: inline-block; color: white; text-decoration: none; font-weight: bold; font-size: 16px; font-family: 'Lalezar', Arial, Helvetica, sans-serif;">TRY ASK AT&amp;T NOW</a>
+                                        <a href="https://att.****/sites/ai-insights" style="display: inline-block; color: white; text-decoration: none; font-weight: bold; font-size: 16px; font-family: Arial, Helvetica, sans-serif;">TRY ASK AT&amp;T NOW</a>
                                     </td>
                                 </tr>
                             </table>
@@ -575,15 +554,15 @@
                         </td>
                     </tr>
                     
-                    <!-- Footer with improved Outlook compatibility -->
+                    <!-- Footer -->
                     <tr>
                         <td bgcolor="#ffffff" style="padding: 25px; text-align: center; border-top: 1px solid #e0e0e0; width: 640px;">
                             <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; width: 640px;">
                                 <tr>
                                     <td align="center" style="width: 640px;">
-                                        <p style="margin: 0 0 10px 0; font-size: 14px; color: #666666; font-family: 'Lalezar', Arial, Helvetica, sans-serif;">Best regards,<br />The Ask AT&amp;T Team</p>
-                                        <p style="margin: 0; font-size: 13px; color: #666666; font-family: 'Lalezar', Arial, Helvetica, sans-serif;">#AIProductivity #SuperhumanWork #AskATT</p>
-                                        <p style="margin: 15px 0 0 0; font-size: 12px; color: #999999; font-family: 'Lalezar', Arial, Helvetica, sans-serif;">© 2025 AT&amp;T Intellectual Property. All rights reserved.</p>
+                                        <p style="margin: 0 0 10px 0; font-size: 14px; color: #666666; font-family: Arial, Helvetica, sans-serif;">Best regards,<br />The Ask AT&amp;T Team</p>
+                                        <p style="margin: 0; font-size: 13px; color: #666666; font-family: Arial, Helvetica, sans-serif;">#AIProductivity #SuperhumanWork #AskATT</p>
+                                        <p style="margin: 15px 0 0 0; font-size: 12px; color: #999999; font-family: Arial, Helvetica, sans-serif;">© 2025 AT&amp;T Intellectual Property. All rights reserved.</p>
                                     </td>
                                 </tr>
                             </table>
