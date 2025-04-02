@@ -29,91 +29,86 @@
     <![endif]-->
 
     <style type="text/css">
-        /* Regular styles for modern email clients (inspired by email1e.html) */
+        /* Regular styles for all clients */
         body {margin: 0; padding: 0; background-color: #F5F5F5; min-width: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
         p, h1, h3 {line-height: 1.6;}
         img {-ms-interpolation-mode: bicubic; display: block;}
-
+        
         /* Common styles */
-        .container {width: 640px; border-collapse: collapse;} /* Fixed width container */
-        /* Card styling (non-MSO) */
+        .container {width: 640px; border-collapse: collapse;}
         .card {
             background-color: #ffffff;
             border: 1px solid #e0e0e0;
             border-radius: 12px;
-            overflow: hidden; /* Ensures content respects border-radius */
+            overflow: hidden;
             box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            transition: all 0.3s ease; /* Smooth hover transition */
+            transition: all 0.3s ease;
         }
-        /* Card hover effect (non-MSO) */
         .card:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 24px rgba(0,0,0,0.15);
-            border-color: #00A8E0; /* Highlight border on hover */
+            border-color: #00A8E0;
         }
-        /* Text alignment */
         .text-center {text-align: center;}
-        /* Primary color text */
         .text-primary {color: #00A8E0;}
-
-        /* Styles for non-Outlook clients for rounded elements */
+        
+        /* Link styles for Outlook */
+        a {color: #00A8E0; text-decoration: none;}
+        a:hover {color: #0095cc; text-decoration: underline;}
+        
+        /* Non-Outlook styles */
         .rounded-table {
             border-radius: 12px;
-            overflow: hidden; /* Clip content to rounded corners */
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* Subtle shadow */
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
         }
         .rounded-image {
             border-radius: 8px;
-            overflow: hidden; /* Clip image to rounded corners */
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle image shadow */
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         .rounded-box {
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            transition: all 0.3s ease; /* Smooth hover */
+            transition: all 0.3s ease;
         }
         .rounded-box:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 24px rgba(0,0,0,0.15);
-            border-color: #00A8E0; /* Highlight border on hover */
+            border-color: #00A8E0;
         }
         .rounded-button {
-            border-radius: 40px; /* Highly rounded button */
+            border-radius: 40px;
             overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Button shadow */
-            transition: all 0.3s ease; /* Smooth hover */
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: all 0.3s ease;
             cursor: pointer;
         }
         .rounded-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 24px rgba(0,0,0,0.2);
-            background-color: #0095cc !important; /* Darker blue on hover, !important needed for specificity */
+            background-color: #0095cc !important;
         }
         .shadow {box-shadow: 0 4px 20px rgba(0,0,0,0.1);}
-
+        
         /* Spacing utilities */
         .p-20 {padding: 20px;}
         .p-40 {padding: 40px;}
         .m-0 {margin: 0;}
         .mb-15 {margin-bottom: 15px;}
         .mb-30 {margin-bottom: 30px;}
-
+        
         /* Font sizes */
         .text-sm {font-size: 14px;}
         .text-base {font-size: 16px;}
         .text-lg {font-size: 18px;}
         .text-xl {font-size: 20px;}
         .text-2xl {font-size: 32px;}
-
-        /* Light mode styles (Default) */
-        body {background-color: #F5F5F5;}
-        .light-mode-text {color: #333333;} /* Default text color */
-
-       
+        
         /* Global font styles */
         body, table, td, p, a, li, blockquote, h1, h2, h3, h4, h5, h6 {
-            font-family: Arial, Helvetica, sans-serif !important; /* Consistent font */
+            font-family: Arial, Helvetica, sans-serif !important;
         }
     </style>
 </head>
@@ -134,7 +129,7 @@
                 <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; background-color: #ffffff; border: 1px solid #e0e0e0;">
                 <![endif]-->
                 <!--[if !mso]><!-->
-                <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-table dark-mode-bg" style="border-collapse: collapse; background-color: #ffffff;">
+                <table border="0" cellpadding="0" cellspacing="0" width="640" class="rounded-table" style="border-collapse: collapse; background-color: #ffffff;">
                 <!--<![endif]-->
 
                     <!-- New Header Section (Card with Image) -->
@@ -147,11 +142,11 @@
                                     <td style="background-color: #ffffff; border: 1px solid #e0e0e0;">
                             <![endif]-->
                             <!--[if !mso]><!-->
-                            <div class="card dark-mode-bg dark-mode-border" style="background-color: #ffffff; border: 1px solid #e0e0e0;">
+                            <div class="card" style="background-color: #ffffff; border: 1px solid #e0e0e0;">
                             <!--<![endif]-->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                     <tr>
-                                        <td class="p-20"> <!-- Padding inside the card -->
+                                        <td class="p-20">
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                                 <!-- Row for Image -->
                                                 <tr>
@@ -164,7 +159,8 @@
                                                                     <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                                                                          alt="Data Analytics Dashboard"
                                                                          width="600"
-                                                                         style="width: 600px; display: block; border: 0; -ms-interpolation-mode: bicubic;" />
+                                                                         height="300"
+                                                                         style="width: 600px; height: 300px; display: block; border: 0; -ms-interpolation-mode: bicubic;" />
                                                                 </td>
                                                             </tr>
                                                         </table>
@@ -172,18 +168,13 @@
                                                         <!--[if !mso]><!-->
                                                         <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                                                              alt="Data Analytics Dashboard"
-                                                             width="640"
+                                                             width="600"
+                                                             height="300"
                                                              class="rounded-image"
-                                                             style="display: block; border: 0; width: 100%; max-width: 640px; height: auto;" />
+                                                             style="display: block; border: 0; width: 600px; height: 300px;" />
                                                         <!--<![endif]-->
-                                                        <!-- Text fallback for when images are blocked -->
-                                                        <div style="display: none; max-height: 0; overflow: hidden;">
-                                                            Eamil header - Transform Your Work</span> with Ask AT&amp;T
-                                                        </div>
                                                     </td>
                                                 </tr>
-                                                <!-- Row for Heading and Subheading -->
-                                                
                                             </table>
                                         </td>
                                     </tr>
@@ -199,16 +190,16 @@
                         </td>
                     </tr>
 
-                    <!-- Outlook Version Notification (Styled like email1e.html) -->
+                    <!-- Outlook Version Notification -->
                     <tr>
-                        <td style="padding: 0 50px 20px 50px;"> <!-- Added bottom padding -->
+                        <td style="padding: 0 50px 20px 50px;">
                             <!--[if mso]>
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
                                     <td style="background-color: #ffffff; border: 1px solid #e0e0e0;">
                             <![endif]-->
                             <!--[if !mso]><!-->
-                            <div class="rounded-box dark-mode-bg dark-mode-border" style="background-color: #ffffff; border: 1px solid #e0e0e0;">
+                            <div class="rounded-box" style="background-color: #ffffff; border: 1px solid #e0e0e0;">
                             <!--<![endif]-->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                     <tr>
@@ -231,9 +222,8 @@
                                                         </a>
                                                     </td>
                                                     <td style="font-family: Arial, Helvetica, sans-serif; color: #666666; font-size: 14px; line-height: 1.5;">
-                                                        <!-- Make text clickable -->
-                                                        <a href="https://att.****/sites/ai-insights" style="text-decoration: none; color: #666666;" class="dark-mode-secondary-text">
-                                                            <p style="margin: 0; color: #666666;" class="dark-mode-secondary-text">For the best viewing experience, please ensure you're using the latest version of Outlook or click to view in browser.</p>
+                                                        <a href="https://att.****/sites/ai-insights" style="text-decoration: none; color: #666666;">
+                                                            <p style="margin: 0; color: #666666;">For the best viewing experience, please ensure you're using the latest version of Outlook or click to view in browser.</p>
                                                         </a>
                                                     </td>
                                                 </tr>
@@ -254,33 +244,33 @@
 
                     <!-- Main Content Section -->
                     <tr>
-                        <td style="padding: 25px 50px 30px 50px; font-family: Arial, Helvetica, sans-serif; color: #333333;" class="light-mode-text dark-mode-text">
+                        <td style="padding: 45px 50px 30px 50px; font-family: Arial, Helvetica, sans-serif; color: #333333;">
                             <!-- Introduction -->
-                            <p style="font-size: 16px; margin-top: 0; margin-bottom: 15px; line-height: 1.7;" class="light-mode-text dark-mode-text">Hi there,</p>
-                            <p style="font-size: 18px; margin-bottom: 30px; line-height: 1.7;" class="light-mode-text dark-mode-text">
-                                &#128640; <strong class="text-primary dark-mode-primary">Meet Ask AT&amp;T</strong> – your AI-powered assistant that doesn't just search for answers… it <strong class="text-primary dark-mode-primary">creates them!</strong>
+                            <p style="font-size: 16px; margin-top: 0; margin-bottom: 15px; line-height: 1.7;">Hi there,</p>
+                            <p style="font-size: 18px; margin-bottom: 30px; line-height: 1.7;">
+                                &#128640; <strong class="text-primary">Meet Ask AT&amp;T</strong> – your AI-powered assistant that doesn't just search for answers… it <strong class="text-primary">creates them!</strong>
                             </p>
 
-                            <!-- Imagine This Example (Card Style from email1e.html) -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 35px;">
+                            <!-- Imagine This Example (Card Style) -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin-bottom: 35px;">
                                 <tr>
                                     <!-- Heading outside the card -->
                                     <td style="padding-bottom: 15px;">
-                                        <h3 class="text-xl text-primary dark-mode-primary" style="margin: 0; font-weight: 600; line-height: 24px;">Imagine This:</h3>
+                                        <h3 class="text-xl text-primary" style="margin: 0; font-weight: 600; line-height: 24px;">Imagine This:</h3>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <!-- Card Structure -->
                                         <!--[if mso]>
-                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; background-color: #ffffff; border: 1px solid #e0e0e0;">
                                             <tr>
-                                                <td style="background-color: #ffffff; border: 1px solid #e0e0e0;">
+                                                <td style="padding: 20px;">
                                         <![endif]-->
                                         <!--[if !mso]><!-->
-                                        <div class="card dark-mode-bg dark-mode-border">
+                                        <div class="card" style="background-color: #ffffff; border: 1px solid #e0e0e0;">
                                         <!--<![endif]-->
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                            <table border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;">
                                                 <tr>
                                                     <td class="p-20">
                                                         <!-- Link only the image section -->
@@ -288,25 +278,27 @@
                                                             <!--[if mso]>
                                                             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                                                                  alt="Data Transformation"
-                                                                 width="560"
-                                                                 style="width: 560px; display: block; border: 0; margin-bottom: 15px;" />
+                                                                 width="600"
+                                                                 height="300"
+                                                                 style="width: 600px; height: 300px; display: block; border: 0; margin-bottom: 15px;" />
                                                             <![endif]-->
                                                             <!--[if !mso]><!-->
                                                             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
                                                                  alt="Data Transformation"
-                                                                 width="560"
+                                                                 width="600"
+                                                                 height="300"
                                                                  class="rounded-image"
-                                                                 style="display: block; border: 0; width: 100%; max-width: 560px; height: auto; margin-bottom: 15px;" />
+                                                                 style="display: block; border: 0; width: 600px; height: 300px; margin-bottom: 15px;" />
                                                             <!--<![endif]-->
                                                         </a>
 
                                                         <!-- Paragraph remains unlinked -->
-                                                        <p class="text-base light-mode-text dark-mode-text" style="margin: 15px 0 0 0; line-height: 1.7;">
-                                                            You're drowning in messy PDF tables, scrambling to extract numbers into Excel. One simple command to <strong class="text-primary dark-mode-primary">Ask AT&amp;T</strong>, and in seconds, it converts everything into a clean CSV—like magic!
+                                                        <p class="text-base" style="margin: 15px 0 0 0; line-height: 1.7;">
+                                                            You're drowning in messy PDF tables, scrambling to extract numbers into Excel. One simple command to <strong class="text-primary">Ask AT&amp;T</strong>, and in seconds, it converts everything into a clean CSV—like magic!
                                                         </p>
                                                         <!-- Link only the "Learn more" text -->
                                                         <p style="font-size: 14px; line-height: 1.7; margin: 8px 0 0 0;">
-                                                            <a href="https://att.****/sites/ai-insights" style="color: #00A8E0; text-decoration: none;" class="dark-mode-link">Learn more → <span style="color: #666666; font-size: 12px;" class="dark-mode-secondary-text">(Click to explore)</span></a>
+                                                            <a href="https://att.****/sites/ai-insights" style="color: #00A8E0; text-decoration: none; font-family: Arial, Helvetica, sans-serif;">Learn more → <span style="color: #666666; font-size: 12px;">(Click to explore)</span></a>
                                                         </p>
                                                     </td>
                                                 </tr>
@@ -324,46 +316,43 @@
                             </table>
 
                             <!-- But That's Just the Beginning (Two Columns, Card Style) -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; margin-bottom: 35px;">
+                            <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse; margin-bottom: 35px;">
                                 <tr>
                                     <td style="padding: 0;">
-                                        <h3 class="text-xl text-primary dark-mode-primary" style="margin: 0 0 15px 0; font-weight: 600; line-height: 24px;">&#129327; But that's just the beginning...</h3>
+                                        <h3 class="text-xl text-primary" style="margin: 0 0 15px 0; font-weight: 600; line-height: 24px;">&#129327; But that's just the beginning...</h3>
 
-                                        <!--[if mso]>
-                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                        <![endif]-->
-                                        <!--[if !mso]><!-->
-                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; font-size: 0;"> <!-- font-size: 0 for inline-block gap fix -->
-                                        <!--<![endif]-->
+                                        <table border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse;">
                                             <tr>
                                                 <!-- Left Column Card -->
-                                                <td width="48%" valign="top" style="display: inline-block; width: 48%;">
+                                                <td width="304" valign="top">
                                                     <!--[if mso]>
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="304" style="border-collapse: collapse; background-color: #ffffff; border: 1px solid #e0e0e0;">
                                                         <tr>
-                                                            <td style="background-color: #ffffff; border: 1px solid #e0e0e0;">
+                                                            <td style="padding: 20px;">
                                                     <![endif]-->
                                                     <!--[if !mso]><!-->
-                                                    <div class="rounded-box dark-mode-bg dark-mode-border" style="border: 1px solid #e0e0e0; background-color: #ffffff;">
+                                                    <div class="rounded-box" style="border: 1px solid #e0e0e0; background-color: #ffffff;">
                                                     <!--<![endif]-->
-                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="304" style="border-collapse: collapse;">
                                                             <tr>
                                                                 <td style="padding: 20px;">
                                                                     <!-- Link only the image -->
                                                                     <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
                                                                     <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                                                                          alt="Rap Battle"
-                                                                         width="100%" style="max-width: 264px; height: auto; display: block; margin-bottom: 10px; border: 0;"
+                                                                         width="264"
+                                                                         height="200"
+                                                                         style="display: block; margin-bottom: 10px; border: 0; width: 264px; height: 200px;" 
                                                                          class="rounded-image" />
                                                                     </a>
                                                                     <!-- Nested table for fixed height content -->
-                                                                    <table height="90" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                                                    <table height="90" border="0" cellpadding="0" cellspacing="0" width="264" style="border-collapse: collapse;">
                                                                         <tr>
-                                                                            <td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.7;" class="light-mode-text dark-mode-text">
+                                                                            <td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.7;">
                                                                                 <p style="margin: 0;">
                                                                                     <strong>Need to explain quantum physics in a rap battle style?</strong>
-                                                                                    <span class="text-primary dark-mode-primary" style="font-weight: bold;">Done.</span>
-                                                                                    <br/> <a href="https://att.****/sites/ai-insights" style="color: #00A8E0; text-decoration: none; font-size: 14px;" class="dark-mode-link">Learn more →</a>
+                                                                                    <span class="text-primary" style="font-weight: bold;">Done.</span>
+                                                                                    <br/> <a href="https://att.****/sites/ai-insights" style="color: #00A8E0; text-decoration: none; font-size: 14px;">Learn more →</a>
                                                                                 </p>
                                                                             </td>
                                                                         </tr>
@@ -380,38 +369,37 @@
                                                     </div>
                                                     <!--<![endif]-->
                                                 </td>
-
-                                                <!-- Gutter -->
-                                                <td width="4%" style="display: inline-block; width: 4%; font-size: 0; line-height: 0;">&nbsp;</td>
-
+                                                <td width="32" style="font-size: 0; line-height: 0;">&nbsp;</td>
                                                 <!-- Right Column Card -->
-                                                <td width="48%" valign="top" style="display: inline-block; width: 48%;">
+                                                <td width="304" valign="top">
                                                     <!--[if mso]>
-                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="304" style="border-collapse: collapse; background-color: #ffffff; border: 1px solid #e0e0e0;">
                                                         <tr>
-                                                            <td style="background-color: #ffffff; border: 1px solid #e0e0e0;">
+                                                            <td style="padding: 20px;">
                                                     <![endif]-->
                                                     <!--[if !mso]><!-->
-                                                    <div class="rounded-box dark-mode-bg dark-mode-border" style="border: 1px solid #e0e0e0; background-color: #ffffff;">
+                                                    <div class="rounded-box" style="border: 1px solid #e0e0e0; background-color: #ffffff;">
                                                     <!--<![endif]-->
-                                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" width="304" style="border-collapse: collapse;">
                                                             <tr>
                                                                 <td style="padding: 20px;">
                                                                     <!-- Link only the image -->
                                                                     <a href="https://att.****/sites/ai-insights" style="text-decoration: none; display: block;">
                                                                     <img src="https://images.unsplash.com/photo-1503095396549-807759245b35?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
                                                                          alt="Shakespeare"
-                                                                         width="100%" style="max-width: 264px; height: auto; display: block; margin-bottom: 10px; border: 0;"
+                                                                         width="264"
+                                                                         height="200"
+                                                                         style="display: block; margin-bottom: 10px; border: 0; width: 264px; height: 200px;" 
                                                                          class="rounded-image" />
                                                                     </a>
                                                                     <!-- Nested table for fixed height content -->
-                                                                    <table height="90" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
+                                                                    <table height="90" border="0" cellpadding="0" cellspacing="0" width="264" style="border-collapse: collapse;">
                                                                         <tr>
-                                                                            <td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.7;" class="light-mode-text dark-mode-text">
+                                                                            <td valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size: 15px; line-height: 1.7;">
                                                                                 <p style="margin: 0;">
                                                                                     <strong>Want a business summary as a Shakespearean monologue?</strong>
-                                                                                    <span class="text-primary dark-mode-primary" style="font-weight: bold;">No problem.</span>
-                                                                                    <br/> <a href="https://att.****/sites/ai-insights" style="color: #00A8E0; text-decoration: none; font-size: 14px;" class="dark-mode-link">Learn more →</a>
+                                                                                    <span class="text-primary" style="font-weight: bold;">No problem.</span>
+                                                                                    <br/> <a href="https://att.****/sites/ai-insights" style="color: #00A8E0; text-decoration: none; font-size: 14px;">Learn more →</a>
                                                                                 </p>
                                                                             </td>
                                                                         </tr>
@@ -445,7 +433,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; margin: 30px 0;">
                                 <tr>
                                     <td style="padding: 0;">
-                                        <h3 class="text-xl text-primary dark-mode-primary" style="margin: 0 0 15px 0; font-weight: 600; line-height: 24px;">&#128161; The secret to unlocking this power?</h3>
+                                        <h3 class="text-xl text-primary" style="margin: 0 0 15px 0; font-weight: 600; line-height: 24px;">&#128161; The secret to unlocking this power?</h3>
 
                                         <!-- Card Structure -->
                                         <!--[if mso]>
@@ -454,7 +442,7 @@
                                                 <td style="background-color: #ffffff; border: 1px solid #e0e0e0;">
                                         <![endif]-->
                                         <!--[if !mso]><!-->
-                                        <div class="rounded-box dark-mode-bg dark-mode-border" style="border: 1px solid #e0e0e0; background-color: #ffffff;">
+                                        <div class="rounded-box" style="border: 1px solid #e0e0e0; background-color: #ffffff;">
                                         <!--<![endif]-->
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                                 <tr>
@@ -485,11 +473,11 @@
                                                                 <td valign="middle">
                                                                     <!-- Paragraph remains unlinked -->
                                                                     <p style="font-size: 16px; line-height: 1.7; margin: 0;" class="light-mode-text dark-mode-text">
-                                                                        <strong class="text-primary dark-mode-primary">Prompt engineering!</strong> It's how you <strong class="text-primary dark-mode-primary">train AI</strong> to give you exactly what you need—<strong class="text-primary dark-mode-primary">faster, smarter, better.</strong>
+                                                                        <strong class="text-primary">Prompt engineering!</strong> It's how you <strong class="text-primary">train AI</strong> to give you exactly what you need—<strong class="text-primary">faster, smarter, better.</strong>
                                                                     </p>
                                                                     <!-- Link only the "Learn more" text -->
                                                                     <p style="font-size: 14px; line-height: 1.7; margin: 8px 0 0 0;">
-                                                                        <a href="https://att.****/sites/ai-insights" style="color: #00A8E0; text-decoration: none;" class="dark-mode-link">Learn more → <span style="color: #666666; font-size: 12px;" class="dark-mode-secondary-text">(Click to explore)</span></a>
+                                                                        <a href="https://att.****/sites/ai-insights" style="color: #00A8E0; text-decoration: none; font-family: Arial, Helvetica, sans-serif;">Learn more → <span style="color: #666666; font-size: 12px;">(Click to explore)</span></a>
                                                                     </p>
                                                                 </td>
                                                             </tr>
@@ -520,7 +508,7 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; margin: 30px 0;">
                                 <tr>
                                     <td style="padding: 0;">
-                                        <h3 class="text-xl text-primary dark-mode-primary" style="margin: 0 0 15px 0; font-weight: 600; line-height: 24px;">&#9888;&#65039; Quick Reality Check:</h3>
+                                        <h3 class="text-xl text-primary" style="margin: 0 0 15px 0; font-weight: 600; line-height: 24px;">&#9888;&#65039; Quick Reality Check:</h3>
 
                                         <!-- Reality check box -->
                                         <!--[if mso]>
@@ -529,7 +517,7 @@
                                                 <td style="background-color: #ffffff; border-left: 3px solid #00A8E0;">
                                         <![endif]-->
                                         <!--[if !mso]><!-->
-                                        <div class="rounded-box dark-mode-bg dark-mode-border" style="background-color: #ffffff; border-left: 3px solid #00A8E0;"> <!-- Left border for emphasis -->
+                                        <div class="rounded-box" style="background-color: #ffffff; border-left: 3px solid #00A8E0;"> <!-- Left border for emphasis -->
                                         <!--<![endif]-->
                                             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                                 <tr>
@@ -577,7 +565,7 @@
                                     <td style="background-color: #ffffff; border: 1px solid #e0e0e0;">
                             <![endif]-->
                             <!--[if !mso]><!-->
-                            <div class="rounded-box dark-mode-bg dark-mode-border" style="margin: 40px 0 20px 0; background-color: #ffffff; border: 1px solid #e0e0e0;">
+                            <div class="rounded-box" style="margin: 40px 0 20px 0; background-color: #ffffff; border: 1px solid #e0e0e0;">
                             <!--<![endif]-->
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                     <tr>
@@ -593,8 +581,8 @@
                                                  class="rounded-image" style="display: block; margin: 0 auto 15px auto; border: 0; width: 100%; max-width: 320px; height: auto;" />
                                             <!--<![endif]-->
 
-                                            <p style="font-size: 20px; font-weight: bold; margin: 0; line-height: 24px;" class="light-mode-text dark-mode-text">
-                                                <strong class="text-primary dark-mode-primary">Ready to level up?</strong> Start asking. Start winning.
+                                            <p style="font-size: 20px; font-weight: bold; margin: 0; line-height: 24px; color: #333333;">
+                                                <strong class="text-primary">Ready to level up?</strong> Start asking. Start winning.
                                             </p>
                                         </td>
                                     </tr>
@@ -618,9 +606,9 @@
                             <table border="0" cellpadding="0" cellspacing="0" align="center" width="280" style="border-collapse: collapse; width: 280px;">
                                 <tr>
                                     <td align="center">
-                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://att.****/sites/ai-insights" style="height:50px; v-text-anchor:middle; width:280px;" arcsize="50%" stroke="f" fillcolor="#00A8E0">
+                                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://att.****/sites/ai-insights" style="height:50px;v-text-anchor:middle;width:280px;" arcsize="50%" stroke="f" fillcolor="#00A8E0">
                                             <w:anchorlock/>
-                                            <center style="color:#ffffff; font-family:Arial,sans-serif; font-size:16px; font-weight:bold;">TRY ASK AT&amp;T NOW</center>
+                                            <center style="color:#ffffff;font-family:Arial,sans-serif;font-size:16px;font-weight:bold;">TRY ASK AT&amp;T NOW</center>
                                         </v:roundrect>
                                     </td>
                                 </tr>
@@ -640,15 +628,15 @@
                         </td>
                     </tr>
 
-                    <!-- Footer Section (Styled like email1e.html) -->
+                    <!-- Footer Section -->
                     <tr>
-                        <td bgcolor="#ffffff" class="dark-mode-bg" style="padding: 25px; text-align: center; border-top: 1px solid #e0e0e0;" class="dark-mode-border">
+                        <td bgcolor="#ffffff" style="padding: 25px; text-align: center; border-top: 1px solid #e0e0e0;">
                             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse;">
                                 <tr>
                                     <td align="center">
-                                        <p style="margin: 0 0 10px 0; font-size: 14px; color: #666666;" class="dark-mode-secondary-text">Best regards,<br />The Ask AT&amp;T Team</p>
-                                        <p style="margin: 0; font-size: 13px; color: #666666;" class="dark-mode-secondary-text">#AIProductivity #SuperhumanWork #AskATT</p>
-                                        <p style="margin: 15px 0 0 0; font-size: 12px; color: #999999;" class="dark-mode-secondary-text">© 2025 AT&amp;T Intellectual Property. All rights reserved.</p>
+                                        <p style="margin: 0 0 10px 0; font-size: 14px; color: #666666;">Best regards,<br />The Ask AT&amp;T Team</p>
+                                        <p style="margin: 0; font-size: 13px; color: #666666;">#AIProductivity #SuperhumanWork #AskATT</p>
+                                        <p style="margin: 15px 0 0 0; font-size: 12px; color: #999999;">© 2025 AT&amp;T Intellectual Property. All rights reserved.</p>
                                     </td>
                                 </tr>
                             </table>
