@@ -10,6 +10,19 @@ alwaysApply: false
 - Inline CSS for email client compatibility
 - Max width: 640px for optimal email client display
 - Images must include alt text and width/height attributes
+## Content Structure (NEW)
+- Each email must include these consistent sections:
+  - Header with hero image
+  - Introduction with personal story
+  - Video section with play button overlay
+  - Transformation/Results section with highlighted metrics
+  - Before & After comparison section
+  - Process/Method section (3-step format)
+  - "Try This Right Now" prompt box
+  - Benefits/Why it Works section
+  - Social proof statement above CTA
+  - CTA button with urgent wording
+  - Footer with hashtags
 
 ## CSS Recommendations
 - Leverage modern CSS where supported:
@@ -22,9 +35,13 @@ alwaysApply: false
 ## Image Guidelines
 - Host images on reliable CDN/server
 - Optimize images for email (max width 640px)
-- Mark clickable images in email_script.md with [CLICKABLE] tag
 - Include fallback text for all images
 - Use modern formats (WebP) with fallbacks
+- Hero images must be 640x250px
+- Video thumbnails must be 640x300px
+- Mark clickable images with [CLICKABLE] tag in email_script.md
+- Include image source documentation in HTML comments
+- Video play button overlay must use consistent styling
 
 ## Template Structure
 - email1b.html serves as the base template
@@ -32,12 +49,37 @@ alwaysApply: false
 - Each new email inherits styling from base template
 - Document image sources and click-through URLs in comments
 
-## Best Practices
-- Keep file size under 100KB when possible
-- Use UTF-8 encoding
-- Implement mobile-responsive design using media queries
-- Use semantic HTML elements where supported
-- Light mode compatibility
+## Metrics and Highlighting (NEW)
+- All metrics must be quantifiable and highlighted with <strong style="color: #00A8E0;"> tags
+- Use 📈 for increases (e.g., "increased by 47% 📈")
+- Use 📉 for decreases (e.g., "reduced time by 75% 📉")
+- Every bullet point must contain at least one highlighted metric
+- Before/After comparisons must use standardized formatting:
+  - ⛔ BEFORE: (red, #bf0000)
+  - ✅ WITH ASK AT&T: (blue, #00A8E0)
 
-@email1b.html - Base template reference
-@email_script.md - Content and image specifications
+## Interactive Elements (NEW)
+- "Try This Right Now" sections must:
+  - Use blue background (#f0f9fd)
+  - Include a monospace prompt in a white box with dashed border
+  - Have clear instructions for customization
+  - Mention time savings (e.g., "30 seconds")
+
+## Social Proof (NEW)
+- Each email must include adoption metrics above CTA:
+  - Number of AT&T employees using the feature
+  - Average time saved per week/month
+  - Format: "Already helping X+ AT&T team members save Y+ hours per [timeframe]"
+
+## Call-to-Action (NEW)
+- All CTAs must:
+  - Include urgency word ("NOW" or "TODAY")
+  - Use same blue background (#00A8E0) 
+  - Have consistent border-radius (40px)
+  - Include box-shadow for depth
+
+## Accessibility (UPDATED)
+- Use semantic HTML5 elements where possible
+- Ensure all images have descriptive alt text
+- Maintain color contrast ratios for highlighted text
+- Use proper heading hierarchy (h3 for section titles)
