@@ -6,36 +6,38 @@ alwaysApply: false
 # Email Template Development Guidelines
 
 ## Structure and Compatibility
-- Use HTML tables for layout (Outlook Desktop requirement)
-- Inline CSS only - no external stylesheets
-- Max width: 600px for optimal email client display
+- Use a responsive layout approach with modern CSS
+- Inline CSS for email client compatibility
+- Max width: 640px for optimal email client display
 - Images must include alt text and width/height attributes
 
-## CSS Restrictions
-- Avoid CSS properties not supported by Outlook Desktop:
-  - background-image
-  - position: absolute/relative
-  - flexbox/grid
-  - margin (use padding instead)
-- Use HTML attributes for spacing and alignment
+## CSS Recommendations
+- Leverage modern CSS where supported:
+  - Flexbox for layout
+  - CSS Grid for complex layouts
+  - Media queries for responsiveness
+  - Custom fonts with appropriate fallbacks
+- Maintain fallback styling for older clients
 
 ## Image Guidelines
 - Host images on reliable CDN/server
-- Optimize images for email (max width 600px)
+- Optimize images for email (max width 640px)
 - Mark clickable images in email_script.md with [CLICKABLE] tag
 - Include fallback text for all images
+- Use modern formats (WebP) with fallbacks
 
 ## Template Structure
-- email1.html serves as the base template
+- email1b.html serves as the base template
 - Maintain consistent CSS formatting across all email variations
 - Each new email inherits styling from base template
 - Document image sources and click-through URLs in comments
 
 ## Best Practices
-- Test across email clients, especially Outlook Desktop
 - Keep file size under 100KB when possible
 - Use UTF-8 encoding
 - Implement mobile-responsive design using media queries
+- Use semantic HTML elements where supported
+- Light mode compatibility
 
-@email1.html - Base template reference
-@email_script.md - Content and image specifications 
+@email1b.html - Base template reference
+@email_script.md - Content and image specifications
